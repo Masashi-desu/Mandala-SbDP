@@ -1,0 +1,16 @@
+.gradle/
+**/build/
+node_modules/
+playwright-report/
+test-results/
+.playwright-cli/
+.env
+.runtime/
+.tools/
+mandala/cache/
+mandala/traces/runtime/
+sample-app/frontend/dist/
+site/dist/
+*.log
+hs_err_pid*.log
+.DS_Store

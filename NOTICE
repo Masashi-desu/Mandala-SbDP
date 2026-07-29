@@ -1,0 +1,20 @@
+Mandala SbDP
+Copyright 2026 Mandala SbDP contributors
+
+This product is licensed under the Apache License, Version 2.0. See LICENSE.
+
+Third-party components retain their own copyright notices and licenses.
+The direct component, tool, container, and media inventory is maintained in
+THIRD_PARTY_NOTICES.md. Transitive and aggregate distributions remain governed
+by their own embedded license and NOTICE files.
+
+Bundled public-domain artwork
+-----------------------------
+- "Chakrasamvara Mandala," Nepal, ca. 1100, The Metropolitan Museum
+  of Art, object 1995.233 — Public Domain / Creative Commons Zero
+  (CC0 1.0). Source:
+  https://www.metmuseum.org/art/collection/search/38021
+
+The image was resized and converted to WebP. The Met designates it as Open
+Access and permits sharing and remixing without restriction. The title and
+source link are retained as a provenance citation and do not imply endorsement.

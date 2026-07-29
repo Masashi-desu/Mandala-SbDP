@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala UI Capture"
+  short_description: "Capture deterministic UI states and API evidence"
+  default_prompt: "Use $mandala-capture-ui to discover states and capture deterministic UI evidence with mocked APIs."

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.1",
+  "id": "projects-empty",
+  "title": "プロジェクト一覧0件",
+  "route": "/projects",
+  "pageUrl": "/projects",
+  "state": "empty",
+  "screenName": "プロジェクト",
+  "screenshot": "mandala/generated/sample-app/screenshots/projects-empty.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"プロジェクト\" [level=1]\n  - text: \"0\"\n  - heading \"プロジェクトはまだありません\" [level=2]\n  - paragraph: 最初のプロジェクトを作成して作業を始めましょう。\n  - link \"プロジェクトを作成\":\n    - /url: /projects/new",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nプロジェクト\n0\nプロジェクトはまだありません\n\n最初のプロジェクトを作成して作業を始めましょう。\n\nプロジェクトを作成",
+  "actions": [],
+  "transitions": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": [],
+      "mockId": "projects-empty:0",
+      "undefined": false
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

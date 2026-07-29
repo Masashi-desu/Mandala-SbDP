@@ -1,0 +1,23 @@
+{
+  "name": "mandala-sbdp-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "packageManager": "npm@11.6.0",
+  "workspaces": [
+    "sample-app/frontend",
+    "platform/playwright-capture",
+    "site"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "capture:ui": "npm run capture --workspace @mandala/playwright-capture",
+    "discover:ui": "npm run discover --workspace @mandala/playwright-capture",
+    "site:build": "npm run build --workspace @mandala/site"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

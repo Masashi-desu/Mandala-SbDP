@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "1.1",
+  "id": "login-failure",
+  "title": "ログイン失敗",
+  "route": "/login",
+  "pageUrl": "/login",
+  "state": "validation-error",
+  "screenName": "おかえりなさい",
+  "screenshot": "mandala/generated/sample-app/screenshots/login-failure.png",
+  "ariaSnapshot": "- main:\n  - text: MANDALA SAMPLE\n  - heading \"おかえりなさい\" [level=1]\n  - paragraph: プロジェクトとタスクを一つの場所で管理します。\n  - alert: ユーザー名またはパスワードが正しくありません。\n  - text: ユーザー名\n  - textbox \"ユーザー名\": admin\n  - text: パスワード\n  - textbox \"パスワード\"\n  - button \"ログイン\"\n  - text: ローカル検証用アカウントはREADMEを参照してください。\n  - complementary: 画面からDBまで、 根拠をつないで理解する。",
+  "domSnapshot": "MANDALA SAMPLE\nおかえりなさい\n\nプロジェクトとタスクを一つの場所で管理します。\n\nユーザー名またはパスワードが正しくありません。\nユーザー名\nパスワード\nログイン\nローカル検証用アカウントはREADMEを参照してください。\n画面からDBまで、\n根拠をつないで理解する。",
+  "actions": [
+    {
+      "kind": "fill",
+      "label": "パスワード",
+      "value": "[REDACTED]"
+    },
+    {
+      "kind": "click",
+      "role": "button",
+      "name": "ログイン"
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 0,
+      "from": {
+        "route": "/login",
+        "state": "normal",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-failure-step-0.png"
+      },
+      "action": {
+        "kind": "fill",
+        "label": "パスワード",
+        "value": "[REDACTED]"
+      },
+      "to": {
+        "route": "/login",
+        "state": "normal",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-failure-step-1.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "validation-error"
+      },
+      "relatedHttp": []
+    },
+    {
+      "sequence": 1,
+      "from": {
+        "route": "/login",
+        "state": "normal",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-failure-step-1.png"
+      },
+      "action": {
+        "kind": "click",
+        "role": "button",
+        "name": "ログイン"
+      },
+      "to": {
+        "route": "/login",
+        "state": "validation-error",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-failure.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "validation-error",
+        "scenarioOutcome": "validation-error"
+      },
+      "relatedHttp": [
+        {
+          "method": "POST",
+          "path": "/api/auth/login",
+          "status": 401,
+          "mockId": "login-failure:0",
+          "undefined": false
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 401,
+      "requestBody": {
+        "username": "admin",
+        "password": "[REDACTED]"
+      },
+      "responseBody": {
+        "status": 401,
+        "code": "AUTHENTICATION_FAILED",
+        "message": "認証に失敗しました"
+      },
+      "mockId": "login-failure:0",
+      "undefined": false,
+      "actionSequence": 1
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+  ],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

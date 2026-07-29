@@ -1,0 +1,7 @@
+.custom-section .custom-html .decision-note{
+  border-left: 4px solid #255f4e;
+  padding-left: 1rem;
+}
+.custom-section .custom-html .decision-note h2{
+  color: #255f4e;
+}

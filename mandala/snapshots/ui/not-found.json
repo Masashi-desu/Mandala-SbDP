@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.1",
+  "id": "not-found",
+  "title": "Not Found",
+  "route": "/does-not-exist",
+  "pageUrl": "/does-not-exist",
+  "state": "not-found",
+  "screenName": "Not Found",
+  "screenshot": "mandala/generated/sample-app/screenshots/not-found.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"Not Found\" [level=1]\n  - text: \"404\"\n  - heading \"ページが見つかりません\" [level=2]\n  - paragraph: 指定されたページまたはデータは存在しません。\n  - link \"プロジェクト一覧へ\":\n    - /url: /projects",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nNot Found\n404\nページが見つかりません\n\n指定されたページまたはデータは存在しません。\n\nプロジェクト一覧へ",
+  "actions": [],
+  "transitions": [],
+  "requests": [],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

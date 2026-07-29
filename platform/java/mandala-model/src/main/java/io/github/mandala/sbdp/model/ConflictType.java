@@ -1,0 +1,12 @@
+package io.github.mandala.sbdp.model;
+
+public enum ConflictType {
+    TYPE_MISMATCH,
+    DISPLAY_NAME_MISMATCH,
+    DESCRIPTION_MISMATCH,
+    ATTRIBUTE_MISMATCH,
+    SOURCE_DISAGREEMENT,
+    CUSTOM_DOCUMENTATION_MISMATCH,
+    SCHEMA_MISMATCH,
+    DANGLING_EDGE
+}

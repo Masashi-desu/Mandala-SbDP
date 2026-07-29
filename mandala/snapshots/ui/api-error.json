@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.1",
+  "id": "api-error",
+  "title": "APIエラー",
+  "route": "/projects",
+  "pageUrl": "/projects",
+  "state": "api-error",
+  "screenName": "エラー",
+  "screenshot": "mandala/generated/sample-app/screenshots/api-error.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"エラー\" [level=1]\n  - text: \"!\"\n  - heading \"APIエラー\" [level=2]\n  - paragraph: データを取得できませんでした。\n  - button \"再試行\"",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nエラー\n!\nAPIエラー\n\nデータを取得できませんでした。\n\n再試行",
+  "actions": [],
+  "transitions": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects",
+      "status": 500,
+      "requestBody": null,
+      "responseBody": {
+        "status": 500,
+        "code": "INTERNAL_ERROR",
+        "message": "処理に失敗しました"
+      },
+      "mockId": "api-error:0",
+      "undefined": false
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

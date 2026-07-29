@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.1",
+  "id": "project-create-validation",
+  "title": "プロジェクト作成入力エラー",
+  "route": "/projects/new",
+  "pageUrl": "/projects/new",
+  "state": "validation-error",
+  "screenName": "新しいプロジェクト",
+  "screenshot": "mandala/generated/sample-app/screenshots/project-create-validation.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"新しいプロジェクト\" [level=1]\n  - alert:\n    - strong: 入力内容を確認してください\n    - list:\n      - listitem:\n        - link \"プロジェクト名は2文字以上です\":\n          - /url: \"#name\"\n  - text: プロジェクト名\n  - textbox \"プロジェクト名\"\n  - text: 2〜100文字で入力してください。 説明\n  - textbox \"説明\"\n  - button \"プロジェクトを作成\"\n  - link \"キャンセル\":\n    - /url: /projects",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\n新しいプロジェクト\n入力内容を確認してください\nプロジェクト名は2文字以上です\nプロジェクト名 *\n2〜100文字で入力してください。\n説明\nプロジェクトを作成\nキャンセル",
+  "actions": [
+    {
+      "kind": "fill",
+      "label": "プロジェクト名",
+      "value": "X"
+    },
+    {
+      "kind": "click",
+      "role": "button",
+      "name": "プロジェクトを作成"
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 0,
+      "from": {
+        "route": "/projects/new",
+        "state": "normal",
+        "name": "新しいプロジェクト",
+        "screenshot": "mandala/generated/sample-app/screenshots/project-create-validation-step-0.png"
+      },
+      "action": {
+        "kind": "fill",
+        "label": "プロジェクト名",
+        "value": "X"
+      },
+      "to": {
+        "route": "/projects/new",
+        "state": "normal",
+        "name": "新しいプロジェクト",
+        "screenshot": "mandala/generated/sample-app/screenshots/project-create-validation-step-1.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "validation-error"
+      },
+      "relatedHttp": []
+    },
+    {
+      "sequence": 1,
+      "from": {
+        "route": "/projects/new",
+        "state": "normal",
+        "name": "新しいプロジェクト",
+        "screenshot": "mandala/generated/sample-app/screenshots/project-create-validation-step-1.png"
+      },
+      "action": {
+        "kind": "click",
+        "role": "button",
+        "name": "プロジェクトを作成"
+      },
+      "to": {
+        "route": "/projects/new",
+        "state": "validation-error",
+        "name": "新しいプロジェクト",
+        "screenshot": "mandala/generated/sample-app/screenshots/project-create-validation.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "validation-error",
+        "scenarioOutcome": "validation-error"
+      },
+      "relatedHttp": [
+        {
+          "method": "POST",
+          "path": "/api/projects",
+          "status": 400,
+          "mockId": "project-create-validation:0",
+          "undefined": false
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/projects",
+      "status": 400,
+      "requestBody": {
+        "name": "X",
+        "description": ""
+      },
+      "responseBody": {
+        "status": 400,
+        "code": "VALIDATION_ERROR",
+        "message": "入力値が不正です",
+        "fieldErrors": {
+          "name": "プロジェクト名は2文字以上です"
+        }
+      },
+      "mockId": "project-create-validation:0",
+      "undefined": false,
+      "actionSequence": 1
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

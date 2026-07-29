@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.1",
+  "id": "project-delete",
+  "title": "プロジェクト削除",
+  "route": "/projects/1",
+  "pageUrl": "/projects",
+  "state": "success",
+  "screenName": "プロジェクト",
+  "screenshot": "mandala/generated/sample-app/screenshots/project-delete.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"プロジェクト\" [level=1]\n  - text: \"0\"\n  - heading \"プロジェクトはまだありません\" [level=2]\n  - paragraph: 最初のプロジェクトを作成して作業を始めましょう。\n  - link \"プロジェクトを作成\":\n    - /url: /projects/new",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nプロジェクト\n0\nプロジェクトはまだありません\n\n最初のプロジェクトを作成して作業を始めましょう。\n\nプロジェクトを作成",
+  "actions": [
+    {
+      "kind": "click",
+      "role": "button",
+      "name": "削除"
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 0,
+      "from": {
+        "route": "/projects/{id}",
+        "state": "normal",
+        "name": "Atlas Renewal",
+        "screenshot": "mandala/generated/sample-app/screenshots/project-delete-step-0.png"
+      },
+      "action": {
+        "kind": "click",
+        "role": "button",
+        "name": "削除"
+      },
+      "to": {
+        "route": "/projects",
+        "state": "success",
+        "name": "プロジェクト",
+        "screenshot": "mandala/generated/sample-app/screenshots/project-delete.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "success",
+        "scenarioOutcome": "success"
+      },
+      "relatedHttp": [
+        {
+          "method": "DELETE",
+          "path": "/api/projects/{id}",
+          "status": 204,
+          "mockId": "project-delete:2",
+          "undefined": false
+        },
+        {
+          "method": "GET",
+          "path": "/api/projects",
+          "status": 200,
+          "mockId": "project-delete:3",
+          "undefined": false
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects/{id}",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": {
+        "id": 1,
+        "name": "Atlas Renewal",
+        "description": "顧客ポータル刷新",
+        "ownerId": 1,
+        "archived": false,
+        "createdAt": "2026-01-10T00:00:00Z",
+        "updatedAt": "2026-01-14T00:00:00Z"
+      },
+      "mockId": "project-delete:0",
+      "undefined": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/projects/{id}/tasks",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": [],
+      "mockId": "project-delete:1",
+      "undefined": false
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/projects/{id}",
+      "status": 204,
+      "requestBody": null,
+      "mockId": "project-delete:2",
+      "undefined": false,
+      "actionSequence": 0
+    },
+    {
+      "method": "GET",
+      "path": "/api/projects",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": [],
+      "mockId": "project-delete:3",
+      "undefined": false,
+      "actionSequence": 0
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

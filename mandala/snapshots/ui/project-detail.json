@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.1",
+  "id": "project-detail",
+  "title": "プロジェクト詳細",
+  "route": "/projects/1",
+  "pageUrl": "/projects/1",
+  "state": "normal",
+  "screenName": "Atlas Renewal",
+  "screenshot": "mandala/generated/sample-app/screenshots/project-detail.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"Atlas Renewal\" [level=1]\n  - link \"← 一覧\":\n    - /url: /projects\n  - link \"編集\":\n    - /url: /projects/1/edit\n  - button \"削除\"\n  - text: \"PROJECT #1\"\n  - paragraph: 顧客ポータル刷新\n  - term: オーナー\n  - definition: \"#1\"\n  - term: 作成日時\n  - definition: 2026/01/10\n  - heading \"タスク\" [level=2]\n  - link \"タスクを追加\":\n    - /url: /projects/1/tasks/new\n  - list:\n    - listitem:\n      - text: IN PROGRESS\n      - link \"API設計\":\n        - /url: /tasks/10\n      - text: 2026/01/14",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nAtlas Renewal\n← 一覧\n編集削除\nPROJECT #1\n\n顧客ポータル刷新\n\nオーナー\n#1\n作成日時\n2026/01/10\nタスク\nタスクを追加\nIN PROGRESS\nAPI設計\n2026/01/14",
+  "actions": [],
+  "transitions": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects/{id}",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": {
+        "id": 1,
+        "name": "Atlas Renewal",
+        "description": "顧客ポータル刷新",
+        "ownerId": 1,
+        "archived": false,
+        "createdAt": "2026-01-10T00:00:00Z",
+        "updatedAt": "2026-01-14T00:00:00Z"
+      },
+      "mockId": "project-detail:0",
+      "undefined": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/projects/{id}/tasks",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": [
+        {
+          "id": 10,
+          "projectId": 1,
+          "title": "API設計",
+          "description": "Endpointを確定する",
+          "status": "IN_PROGRESS",
+          "assigneeId": 1,
+          "createdAt": "2026-01-10T00:00:00Z",
+          "updatedAt": "2026-01-14T00:00:00Z"
+        }
+      ],
+      "mockId": "project-detail:1",
+      "undefined": false
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

@@ -1,0 +1,33 @@
+package io.github.mandala.sbdp.model;
+
+public enum NodeType {
+    E2E_FLOW,
+    UI_ENTRY,
+    SCREEN,
+    SCREEN_STATE,
+    UI_ACTION,
+    SCREENSHOT,
+    HTTP_CLIENT_CALL,
+    HTTP_ENDPOINT,
+    OPENAPI_OPERATION,
+    REQUEST_SCHEMA,
+    RESPONSE_SCHEMA,
+    JAVA_CLASS,
+    JAVA_METHOD,
+    CONTROLLER,
+    APPLICATION_SERVICE,
+    DOMA_DAO,
+    DOMA_DAO_METHOD,
+    SQL_STATEMENT,
+    TRACE,
+    SPAN,
+    DB_SCHEMA,
+    DB_TABLE,
+    DB_COLUMN,
+    DB_VIEW,
+    DB_MATERIALIZED_VIEW,
+    DB_FUNCTION,
+    DB_TRIGGER,
+    DB_POLICY,
+    CUSTOM_HTML_SECTION
+}

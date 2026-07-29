@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala Refresh"
+  short_description: "Refresh and verify the full Documentation Graph"
+  default_prompt: "Use $mandala-refresh to regenerate and verify a Mandala with safe incremental fallback."

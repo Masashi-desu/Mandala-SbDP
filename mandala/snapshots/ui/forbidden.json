@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.1",
+  "id": "forbidden",
+  "title": "権限不足",
+  "route": "/projects/1",
+  "pageUrl": "/projects/1",
+  "state": "forbidden",
+  "screenName": "権限不足",
+  "screenshot": "mandala/generated/sample-app/screenshots/forbidden.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"権限不足\" [level=1]\n  - text: \"403\"\n  - heading \"権限がありません\" [level=2]\n  - paragraph: この操作を行う権限がありません。管理者へお問い合わせください。\n  - link \"一覧へ戻る\":\n    - /url: /projects",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\n権限不足\n403\n権限がありません\n\nこの操作を行う権限がありません。管理者へお問い合わせください。\n\n一覧へ戻る",
+  "actions": [],
+  "transitions": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects/{id}",
+      "status": 403,
+      "requestBody": null,
+      "responseBody": {
+        "status": 403,
+        "code": "ACCESS_DENIED",
+        "message": "権限がありません"
+      },
+      "mockId": "forbidden:0",
+      "undefined": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/projects/{id}/tasks",
+      "status": 403,
+      "requestBody": null,
+      "responseBody": {
+        "status": 403,
+        "code": "ACCESS_DENIED",
+        "message": "権限がありません"
+      },
+      "mockId": "forbidden:1",
+      "undefined": false
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 403 (Forbidden)",
+    "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+  ],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "USER",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

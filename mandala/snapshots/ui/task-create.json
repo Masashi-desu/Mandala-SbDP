@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.1",
+  "id": "task-create",
+  "title": "タスク作成",
+  "route": "/projects/1/tasks/new",
+  "pageUrl": "/tasks/11",
+  "state": "success",
+  "screenName": "Schema capture",
+  "screenshot": "mandala/generated/sample-app/screenshots/task-create.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"Schema capture\" [level=1]\n  - link \"← プロジェクト\":\n    - /url: /projects/1\n  - link \"編集\":\n    - /url: /tasks/11/edit\n  - button \"削除\"\n  - text: TODO\n  - paragraph: pg_catalogを取得\n  - text: 状態を変更\n  - combobox \"状態を変更\":\n    - option \"TODO\" [selected]\n    - option \"IN_PROGRESS\"\n    - option \"DONE\"\n    - option \"BLOCKED\"",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nSchema capture\n← プロジェクト\n編集削除\nTODO\n\npg_catalogを取得\n\n状態を変更\nTODO\nIN_PROGRESS\nDONE\nBLOCKED",
+  "actions": [
+    {
+      "kind": "fill",
+      "label": "タスク名",
+      "value": "Schema capture"
+    },
+    {
+      "kind": "fill",
+      "label": "説明",
+      "value": "pg_catalogを取得"
+    },
+    {
+      "kind": "click",
+      "role": "button",
+      "name": "タスクを作成"
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 0,
+      "from": {
+        "route": "/projects/{id}/tasks/new",
+        "state": "normal",
+        "name": "新しいタスク",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-create-step-0.png"
+      },
+      "action": {
+        "kind": "fill",
+        "label": "タスク名",
+        "value": "Schema capture"
+      },
+      "to": {
+        "route": "/projects/{id}/tasks/new",
+        "state": "normal",
+        "name": "新しいタスク",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-create-step-1.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "success"
+      },
+      "relatedHttp": []
+    },
+    {
+      "sequence": 1,
+      "from": {
+        "route": "/projects/{id}/tasks/new",
+        "state": "normal",
+        "name": "新しいタスク",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-create-step-1.png"
+      },
+      "action": {
+        "kind": "fill",
+        "label": "説明",
+        "value": "pg_catalogを取得"
+      },
+      "to": {
+        "route": "/projects/{id}/tasks/new",
+        "state": "normal",
+        "name": "新しいタスク",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-create-step-2.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "success"
+      },
+      "relatedHttp": []
+    },
+    {
+      "sequence": 2,
+      "from": {
+        "route": "/projects/{id}/tasks/new",
+        "state": "normal",
+        "name": "新しいタスク",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-create-step-2.png"
+      },
+      "action": {
+        "kind": "click",
+        "role": "button",
+        "name": "タスクを作成"
+      },
+      "to": {
+        "route": "/tasks/{id}",
+        "state": "success",
+        "name": "Schema capture",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-create.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "success",
+        "scenarioOutcome": "success"
+      },
+      "relatedHttp": [
+        {
+          "method": "POST",
+          "path": "/api/projects/{id}/tasks",
+          "status": 201,
+          "mockId": "task-create:0",
+          "undefined": false
+        },
+        {
+          "method": "GET",
+          "path": "/api/tasks/{id}",
+          "status": 200,
+          "mockId": "task-create:1",
+          "undefined": false
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/projects/{id}/tasks",
+      "status": 201,
+      "requestBody": {
+        "title": "Schema capture",
+        "description": "pg_catalogを取得"
+      },
+      "responseBody": {
+        "id": 11,
+        "projectId": 1,
+        "title": "Schema capture",
+        "description": "pg_catalogを取得",
+        "status": "TODO",
+        "assigneeId": null,
+        "createdAt": "2026-01-15T03:00:00Z",
+        "updatedAt": "2026-01-15T03:00:00Z"
+      },
+      "mockId": "task-create:0",
+      "undefined": false,
+      "actionSequence": 2
+    },
+    {
+      "method": "GET",
+      "path": "/api/tasks/{id}",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": {
+        "id": 11,
+        "projectId": 1,
+        "title": "Schema capture",
+        "description": "pg_catalogを取得",
+        "status": "TODO",
+        "assigneeId": null,
+        "createdAt": "2026-01-15T03:00:00Z",
+        "updatedAt": "2026-01-15T03:00:00Z"
+      },
+      "mockId": "task-create:1",
+      "undefined": false,
+      "actionSequence": 2
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

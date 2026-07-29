@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala Review"
+  short_description: "Review inferred claims, changes, conflicts, and stale data"
+  default_prompt: "Use $mandala-review to prepare and apply an evidence-aware review of generated Mandala claims."

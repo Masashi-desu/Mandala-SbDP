@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala Runtime Capture"
+  short_description: "Capture sanitized endpoint-to-database traces"
+  default_prompt: "Use $mandala-capture-runtime to capture and sanitize endpoint-to-database OpenTelemetry traces."

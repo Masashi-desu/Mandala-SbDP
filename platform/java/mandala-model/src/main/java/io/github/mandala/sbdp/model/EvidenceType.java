@@ -1,0 +1,15 @@
+package io.github.mandala.sbdp.model;
+
+public enum EvidenceType {
+    RUNTIME_OBSERVATION,
+    SPRING_MAPPING,
+    OPENAPI,
+    SOURCE_CODE,
+    JAVADOC,
+    DOMA_MAPPING,
+    SQL_STATIC_ANALYSIS,
+    DATABASE_INTROSPECTION,
+    PLAYWRIGHT_OBSERVATION,
+    AGENT_INFERENCE,
+    HUMAN_INPUT
+}

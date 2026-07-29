@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.1",
+  "id": "projects-list",
+  "title": "プロジェクト一覧",
+  "route": "/projects",
+  "pageUrl": "/projects",
+  "state": "normal",
+  "screenName": "プロジェクト",
+  "screenshot": "mandala/generated/sample-app/screenshots/projects-list.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"プロジェクト\" [level=1]\n  - paragraph: 2件のプロジェクト\n  - link \"新規作成\":\n    - /url: /projects/new\n  - article:\n    - text: \"#1\"\n    - heading \"Atlas Renewal\" [level=2]:\n      - link \"Atlas Renewal\":\n        - /url: /projects/1\n    - paragraph: 顧客ポータル刷新\n    - text: 更新 2026/01/14\n  - article:\n    - text: \"#2\"\n    - heading \"Orbit Operations\" [level=2]:\n      - link \"Orbit Operations\":\n        - /url: /projects/2\n    - paragraph: 運用改善\n    - text: 更新 2026/01/13",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nプロジェクト\n\n2件のプロジェクト\n\n新規作成\n#1\nAtlas Renewal\n\n顧客ポータル刷新\n\n更新 2026/01/14\n#2\nOrbit Operations\n\n運用改善\n\n更新 2026/01/13",
+  "actions": [],
+  "transitions": [],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/projects",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": [
+        {
+          "id": 1,
+          "name": "Atlas Renewal",
+          "description": "顧客ポータル刷新",
+          "ownerId": 1,
+          "archived": false,
+          "createdAt": "2026-01-10T00:00:00Z",
+          "updatedAt": "2026-01-14T00:00:00Z"
+        },
+        {
+          "id": 2,
+          "name": "Orbit Operations",
+          "description": "運用改善",
+          "ownerId": 1,
+          "archived": false,
+          "createdAt": "2026-01-11T00:00:00Z",
+          "updatedAt": "2026-01-13T00:00:00Z"
+        }
+      ],
+      "mockId": "projects-list:0",
+      "undefined": false
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

@@ -1,0 +1,175 @@
+defaults:
+  environment: { role: ADMIN }
+scenarios:
+  - id: login-success
+    title: ログイン成功
+    route: /login
+    state: normal
+    expect: { role: heading, name: プロジェクト }
+    mocks:
+      - { method: POST, path: /api/auth/login, body: { id: 1, username: admin, displayName: Local Administrator, role: ADMIN } }
+      - { method: GET, path: /api/projects, body: [] }
+    actions:
+      - { kind: fill, label: パスワード, value: mandala-local }
+      - { kind: click, role: button, name: ログイン }
+  - id: login-failure
+    title: ログイン失敗
+    route: /login
+    state: validation-error
+    expect: { role: alert, name: ユーザー名またはパスワードが正しくありません。 }
+    mocks:
+      - { method: POST, path: /api/auth/login, status: 401, body: { status: 401, code: AUTHENTICATION_FAILED, message: 認証に失敗しました } }
+    actions:
+      - { kind: fill, label: パスワード, value: wrong }
+      - { kind: click, role: button, name: ログイン }
+  - id: projects-list
+    title: プロジェクト一覧
+    route: /projects
+    state: normal
+    expect: { role: heading, name: プロジェクト }
+    mocks:
+      - method: GET
+        path: /api/projects
+        body:
+          - { id: 1, name: Atlas Renewal, description: 顧客ポータル刷新, ownerId: 1, archived: false, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-14T00:00:00Z' }
+          - { id: 2, name: Orbit Operations, description: 運用改善, ownerId: 1, archived: false, createdAt: '2026-01-11T00:00:00Z', updatedAt: '2026-01-13T00:00:00Z' }
+  - id: projects-empty
+    title: プロジェクト一覧0件
+    route: /projects
+    state: empty
+    expect: { role: heading, name: プロジェクトはまだありません }
+    mocks:
+      - { method: GET, path: /api/projects, body: [] }
+  - id: projects-loading
+    title: プロジェクト一覧Loading
+    route: /projects
+    state: loading
+    captureWhileLoading: true
+    expect: { role: status, name: 読み込み中です }
+    mocks:
+      - { method: GET, path: /api/projects, delayUntil: capture, body: [] }
+  - id: project-detail
+    title: プロジェクト詳細
+    route: /projects/1
+    state: normal
+    expect: { role: heading, name: Atlas Renewal }
+    mocks: &projectDetailMocks
+      - { method: GET, path: /api/projects/1, body: &project { id: 1, name: Atlas Renewal, description: 顧客ポータル刷新, ownerId: 1, archived: false, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-14T00:00:00Z' } }
+      - { method: GET, path: /api/projects/1/tasks, body: [{ id: 10, projectId: 1, title: API設計, description: Endpointを確定する, status: IN_PROGRESS, assigneeId: 1, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-14T00:00:00Z' }] }
+  - id: project-create-success
+    title: プロジェクト作成成功
+    route: /projects/new
+    state: success
+    expect: { role: heading, name: New Mandala }
+    mocks:
+      - { method: POST, path: /api/projects, status: 201, body: { id: 3, name: New Mandala, description: 継続更新の検証, ownerId: 1, archived: false, createdAt: '2026-01-15T03:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/projects/3, body: { id: 3, name: New Mandala, description: 継続更新の検証, ownerId: 1, archived: false, createdAt: '2026-01-15T03:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/projects/3/tasks, body: [] }
+    actions:
+      - { kind: fill, label: プロジェクト名, value: New Mandala }
+      - { kind: fill, label: 説明, value: 継続更新の検証 }
+      - { kind: click, role: button, name: プロジェクトを作成 }
+  - id: project-create-validation
+    title: プロジェクト作成入力エラー
+    route: /projects/new
+    state: validation-error
+    expect: { role: alert, name: 入力内容を確認してください プロジェクト名は2文字以上です }
+    mocks:
+      - { method: POST, path: /api/projects, status: 400, body: { status: 400, code: VALIDATION_ERROR, message: 入力値が不正です, fieldErrors: { name: プロジェクト名は2文字以上です } } }
+    actions:
+      - { kind: fill, label: プロジェクト名, value: X }
+      - { kind: click, role: button, name: プロジェクトを作成 }
+  - id: project-update
+    title: プロジェクト更新
+    route: /projects/1/edit
+    state: success
+    expect: { role: heading, name: Atlas Renewal v2 }
+    mocks:
+      - { method: GET, path: /api/projects/1, body: *project }
+      - { method: PUT, path: /api/projects/1, body: { id: 1, name: Atlas Renewal v2, description: 顧客ポータル刷新, ownerId: 1, archived: false, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/projects/1, body: { id: 1, name: Atlas Renewal v2, description: 顧客ポータル刷新, ownerId: 1, archived: false, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/projects/1/tasks, body: [] }
+    actions:
+      - { kind: fill, label: プロジェクト名, value: Atlas Renewal v2 }
+      - { kind: click, role: button, name: 変更を保存 }
+  - id: project-delete
+    title: プロジェクト削除
+    route: /projects/1
+    state: success
+    expect: { role: heading, name: プロジェクトはまだありません }
+    mocks:
+      - { method: GET, path: /api/projects/1, body: *project }
+      - { method: GET, path: /api/projects/1/tasks, body: [] }
+      - { method: DELETE, path: /api/projects/1, status: 204 }
+      - { method: GET, path: /api/projects, body: [] }
+    actions:
+      - { kind: click, role: button, name: 削除 }
+  - id: task-create
+    title: タスク作成
+    route: /projects/1/tasks/new
+    state: success
+    expect: { role: heading, name: Schema capture }
+    mocks:
+      - { method: POST, path: /api/projects/1/tasks, status: 201, body: { id: 11, projectId: 1, title: Schema capture, description: pg_catalogを取得, status: TODO, assigneeId: null, createdAt: '2026-01-15T03:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/tasks/11, body: { id: 11, projectId: 1, title: Schema capture, description: pg_catalogを取得, status: TODO, assigneeId: null, createdAt: '2026-01-15T03:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+    actions:
+      - { kind: fill, label: タスク名, value: Schema capture }
+      - { kind: fill, label: 説明, value: pg_catalogを取得 }
+      - { kind: click, role: button, name: タスクを作成 }
+  - id: task-update
+    title: タスク更新
+    route: /tasks/10/edit
+    state: success
+    expect: { role: heading, name: API設計完了 }
+    mocks:
+      - { method: GET, path: /api/tasks/10, body: &task { id: 10, projectId: 1, title: API設計, description: Endpointを確定する, status: IN_PROGRESS, assigneeId: 1, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-14T00:00:00Z' } }
+      - { method: PUT, path: /api/tasks/10, body: { id: 10, projectId: 1, title: API設計完了, description: Endpointを確定する, status: IN_PROGRESS, assigneeId: 1, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/tasks/10, body: { id: 10, projectId: 1, title: API設計完了, description: Endpointを確定する, status: IN_PROGRESS, assigneeId: 1, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+    actions:
+      - { kind: fill, label: タスク名, value: API設計完了 }
+      - { kind: click, role: button, name: 変更を保存 }
+  - id: task-status-change
+    title: タスク状態変更
+    route: /tasks/10
+    state: success
+    expect: { text: DONE }
+    mocks:
+      - { method: GET, path: /api/tasks/10, body: *task }
+      - { method: PATCH, path: /api/tasks/10/status, body: { id: 10, projectId: 1, title: API設計, description: Endpointを確定する, status: DONE, assigneeId: 1, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+      - { method: GET, path: /api/tasks/10, body: { id: 10, projectId: 1, title: API設計, description: Endpointを確定する, status: DONE, assigneeId: 1, createdAt: '2026-01-10T00:00:00Z', updatedAt: '2026-01-15T03:00:00Z' } }
+    actions:
+      - { kind: select, label: 状態を変更, value: DONE }
+  - id: task-delete
+    title: タスク削除
+    route: /tasks/10
+    state: success
+    expect: { role: heading, name: Atlas Renewal }
+    mocks:
+      - { method: GET, path: /api/tasks/10, body: *task }
+      - { method: DELETE, path: /api/tasks/10, status: 204 }
+      - { method: GET, path: /api/projects/1, body: *project }
+      - { method: GET, path: /api/projects/1/tasks, body: [] }
+    actions:
+      - { kind: click, role: button, name: 削除 }
+  - id: forbidden
+    title: 権限不足
+    route: /projects/1
+    state: forbidden
+    environment: { role: USER }
+    expect: { role: heading, name: 権限がありません }
+    mocks:
+      - { method: GET, path: /api/projects/1, status: 403, body: { status: 403, code: ACCESS_DENIED, message: 権限がありません } }
+      - { method: GET, path: /api/projects/1/tasks, status: 403, body: { status: 403, code: ACCESS_DENIED, message: 権限がありません } }
+  - id: api-error
+    title: APIエラー
+    route: /projects
+    state: api-error
+    expect: { role: heading, name: APIエラー }
+    mocks:
+      - { method: GET, path: /api/projects, status: 500, body: { status: 500, code: INTERNAL_ERROR, message: 処理に失敗しました } }
+  - id: not-found
+    title: Not Found
+    route: /does-not-exist
+    state: not-found
+    expect: { role: heading, name: ページが見つかりません }
+    mocks: []

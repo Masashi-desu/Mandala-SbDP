@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala Discover"
+  short_description: "Discover UI-to-database documentation boundaries"
+  default_prompt: "Use $mandala-discover to discover analyzable routes, APIs, Java, Doma, SQL, and database boundaries."

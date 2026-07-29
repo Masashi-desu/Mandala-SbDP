@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala Reconcile"
+  short_description: "Reconcile evidence, conflicts, stale items, and gaps"
+  default_prompt: "Use $mandala-reconcile to merge evidence and report conflicts, stale items, gaps, and low-confidence claims."

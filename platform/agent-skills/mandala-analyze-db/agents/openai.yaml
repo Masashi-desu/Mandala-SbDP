@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mandala DB Analysis"
+  short_description: "Analyze PostgreSQL schema, SQL, CRUD, and ER links"
+  default_prompt: "Use $mandala-analyze-db to introspect PostgreSQL and connect SQL, CRUD, tables, columns, and ER relations."

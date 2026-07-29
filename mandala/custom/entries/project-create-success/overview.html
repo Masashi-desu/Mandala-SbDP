@@ -1,0 +1,11 @@
+<div class="decision-note" data-mandala-assert="endpoint:POST:/api/projects|attributes.path=/api/projects">
+  <h2>プロジェクト作成の設計意図</h2>
+  <p>プロジェクトと監査ログを同一トランザクションで作成し、成功レスポンスより先に永続化を完了します。</p>
+  <p>
+    <mandala-endpoint-ref id="endpoint:POST:/api/projects"></mandala-endpoint-ref>
+    から
+    <mandala-table-ref id="table:public.projects"></mandala-table-ref>
+    と <mandala-table-ref id="table:public.audit_logs"></mandala-table-ref>
+    へ辿れます。
+  </p>
+</div>

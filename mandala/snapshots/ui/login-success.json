@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.1",
+  "id": "login-success",
+  "title": "ログイン成功",
+  "route": "/login",
+  "pageUrl": "/projects",
+  "state": "normal",
+  "screenName": "プロジェクト",
+  "screenshot": "mandala/generated/sample-app/screenshots/login-success.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"プロジェクト\" [level=1]\n  - text: \"0\"\n  - heading \"プロジェクトはまだありません\" [level=2]\n  - paragraph: 最初のプロジェクトを作成して作業を始めましょう。\n  - link \"プロジェクトを作成\":\n    - /url: /projects/new",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nプロジェクト\n0\nプロジェクトはまだありません\n\n最初のプロジェクトを作成して作業を始めましょう。\n\nプロジェクトを作成",
+  "actions": [
+    {
+      "kind": "fill",
+      "label": "パスワード",
+      "value": "[REDACTED]"
+    },
+    {
+      "kind": "click",
+      "role": "button",
+      "name": "ログイン"
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 0,
+      "from": {
+        "route": "/login",
+        "state": "normal",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-success-step-0.png"
+      },
+      "action": {
+        "kind": "fill",
+        "label": "パスワード",
+        "value": "[REDACTED]"
+      },
+      "to": {
+        "route": "/login",
+        "state": "normal",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-success-step-1.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "normal"
+      },
+      "relatedHttp": []
+    },
+    {
+      "sequence": 1,
+      "from": {
+        "route": "/login",
+        "state": "normal",
+        "name": "おかえりなさい",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-success-step-1.png"
+      },
+      "action": {
+        "kind": "click",
+        "role": "button",
+        "name": "ログイン"
+      },
+      "to": {
+        "route": "/projects",
+        "state": "normal",
+        "name": "プロジェクト",
+        "screenshot": "mandala/generated/sample-app/screenshots/login-success.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "normal"
+      },
+      "relatedHttp": [
+        {
+          "method": "POST",
+          "path": "/api/auth/login",
+          "status": 200,
+          "mockId": "login-success:0",
+          "undefined": false
+        },
+        {
+          "method": "GET",
+          "path": "/api/projects",
+          "status": 200,
+          "mockId": "login-success:1",
+          "undefined": false
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "POST",
+      "path": "/api/auth/login",
+      "status": 200,
+      "requestBody": {
+        "username": "admin",
+        "password": "[REDACTED]"
+      },
+      "responseBody": {
+        "id": 1,
+        "username": "admin",
+        "displayName": "Local Administrator",
+        "role": "ADMIN"
+      },
+      "mockId": "login-success:0",
+      "undefined": false,
+      "actionSequence": 1
+    },
+    {
+      "method": "GET",
+      "path": "/api/projects",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": [],
+      "mockId": "login-success:1",
+      "undefined": false,
+      "actionSequence": 1
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

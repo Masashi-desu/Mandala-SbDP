@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.1",
+  "id": "task-update",
+  "title": "タスク更新",
+  "route": "/tasks/10/edit",
+  "pageUrl": "/tasks/10",
+  "state": "success",
+  "screenName": "API設計完了",
+  "screenshot": "mandala/generated/sample-app/screenshots/task-update.png",
+  "ariaSnapshot": "- banner:\n  - link \"Mandala Tasks\":\n    - /url: /projects\n  - navigation \"メイン\":\n    - link \"プロジェクト\":\n      - /url: /projects\n    - button \"ログアウト\"\n- main:\n  - text: SAMPLE APPLICATION\n  - heading \"API設計完了\" [level=1]\n  - link \"← プロジェクト\":\n    - /url: /projects/1\n  - link \"編集\":\n    - /url: /tasks/10/edit\n  - button \"削除\"\n  - text: IN PROGRESS\n  - paragraph: Endpointを確定する\n  - text: 状態を変更\n  - combobox \"状態を変更\":\n    - option \"TODO\"\n    - option \"IN_PROGRESS\" [selected]\n    - option \"DONE\"\n    - option \"BLOCKED\"",
+  "domSnapshot": "Mandala Tasks\nプロジェクト\nログアウト\nSAMPLE APPLICATION\nAPI設計完了\n← プロジェクト\n編集削除\nIN PROGRESS\n\nEndpointを確定する\n\n状態を変更\nTODO\nIN_PROGRESS\nDONE\nBLOCKED",
+  "actions": [
+    {
+      "kind": "fill",
+      "label": "タスク名",
+      "value": "API設計完了"
+    },
+    {
+      "kind": "click",
+      "role": "button",
+      "name": "変更を保存"
+    }
+  ],
+  "transitions": [
+    {
+      "sequence": 0,
+      "from": {
+        "route": "/tasks/{id}/edit",
+        "state": "normal",
+        "name": "タスクを編集",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-update-step-0.png"
+      },
+      "action": {
+        "kind": "fill",
+        "label": "タスク名",
+        "value": "API設計完了"
+      },
+      "to": {
+        "route": "/tasks/{id}/edit",
+        "state": "normal",
+        "name": "タスクを編集",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-update-step-1.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "normal",
+        "scenarioOutcome": "success"
+      },
+      "relatedHttp": []
+    },
+    {
+      "sequence": 1,
+      "from": {
+        "route": "/tasks/{id}/edit",
+        "state": "normal",
+        "name": "タスクを編集",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-update-step-1.png"
+      },
+      "action": {
+        "kind": "click",
+        "role": "button",
+        "name": "変更を保存"
+      },
+      "to": {
+        "route": "/tasks/{id}",
+        "state": "success",
+        "name": "API設計完了",
+        "screenshot": "mandala/generated/sample-app/screenshots/task-update.png"
+      },
+      "condition": {
+        "role": "ADMIN",
+        "featureFlags": {},
+        "outcome": "success",
+        "scenarioOutcome": "success"
+      },
+      "relatedHttp": [
+        {
+          "method": "PUT",
+          "path": "/api/tasks/{id}",
+          "status": 200,
+          "mockId": "task-update:1",
+          "undefined": false
+        },
+        {
+          "method": "GET",
+          "path": "/api/tasks/{id}",
+          "status": 200,
+          "mockId": "task-update:2",
+          "undefined": false
+        }
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/tasks/{id}",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": {
+        "id": 10,
+        "projectId": 1,
+        "title": "API設計",
+        "description": "Endpointを確定する",
+        "status": "IN_PROGRESS",
+        "assigneeId": 1,
+        "createdAt": "2026-01-10T00:00:00Z",
+        "updatedAt": "2026-01-14T00:00:00Z"
+      },
+      "mockId": "task-update:0",
+      "undefined": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/tasks/{id}",
+      "status": 200,
+      "requestBody": {
+        "title": "API設計完了",
+        "description": "Endpointを確定する",
+        "status": "IN_PROGRESS",
+        "assigneeId": 1
+      },
+      "responseBody": {
+        "id": 10,
+        "projectId": 1,
+        "title": "API設計完了",
+        "description": "Endpointを確定する",
+        "status": "IN_PROGRESS",
+        "assigneeId": 1,
+        "createdAt": "2026-01-10T00:00:00Z",
+        "updatedAt": "2026-01-15T03:00:00Z"
+      },
+      "mockId": "task-update:1",
+      "undefined": false,
+      "actionSequence": 1
+    },
+    {
+      "method": "GET",
+      "path": "/api/tasks/{id}",
+      "status": 200,
+      "requestBody": null,
+      "responseBody": {
+        "id": 10,
+        "projectId": 1,
+        "title": "API設計完了",
+        "description": "Endpointを確定する",
+        "status": "IN_PROGRESS",
+        "assigneeId": 1,
+        "createdAt": "2026-01-10T00:00:00Z",
+        "updatedAt": "2026-01-15T03:00:00Z"
+      },
+      "mockId": "task-update:2",
+      "undefined": false,
+      "actionSequence": 1
+    }
+  ],
+  "consoleErrors": [],
+  "undefinedCommunications": [],
+  "environment": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "locale": "ja-JP",
+    "timezone": "Asia/Tokyo",
+    "colorScheme": "light",
+    "time": "2026-01-15T03:00:00.000Z",
+    "role": "ADMIN",
+    "featureFlags": {}
+  },
+  "evidence": "PLAYWRIGHT_OBSERVATION",
+  "confidence": "OBSERVED",
+  "capturedAt": "2026-01-15T03:00:00.000Z"
+}

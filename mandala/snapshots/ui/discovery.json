@@ -1,0 +1,392 @@
+{
+  "generatedAt": "2025-01-01T00:00:00Z",
+  "frontendRoot": "sample-app/frontend/src",
+  "routes": [
+    {
+      "value": "/login",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 19
+    },
+    {
+      "value": "/projects",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 18
+    },
+    {
+      "value": "/projects/:id",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 13
+    },
+    {
+      "value": "/projects/:id/edit",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 13
+    },
+    {
+      "value": "/projects/:id/tasks/new",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 14
+    },
+    {
+      "value": "/projects/new",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 20
+    },
+    {
+      "value": "/tasks/:id",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 14
+    },
+    {
+      "value": "/tasks/:id/edit",
+      "file": "sample-app/frontend/src/router.ts",
+      "line": 14
+    }
+  ],
+  "clientApis": [
+    {
+      "method": "DELETE",
+      "value": "/api/projects/{id}",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 65
+    },
+    {
+      "method": "DELETE",
+      "value": "/api/tasks/{id}",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 71
+    },
+    {
+      "method": "GET",
+      "value": "/api/auth/me",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 60
+    },
+    {
+      "method": "GET",
+      "value": "/api/projects",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 61
+    },
+    {
+      "method": "GET",
+      "value": "/api/projects/{id}",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 62
+    },
+    {
+      "method": "GET",
+      "value": "/api/projects/{id}/tasks",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 66
+    },
+    {
+      "method": "GET",
+      "value": "/api/tasks/{id}",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 67
+    },
+    {
+      "method": "PATCH",
+      "value": "/api/tasks/{id}/status",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 70
+    },
+    {
+      "method": "POST",
+      "value": "/api/auth/login",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 58
+    },
+    {
+      "method": "POST",
+      "value": "/api/auth/logout",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 59
+    },
+    {
+      "method": "POST",
+      "value": "/api/projects",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 63
+    },
+    {
+      "method": "POST",
+      "value": "/api/projects/{id}/tasks",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 68
+    },
+    {
+      "method": "PUT",
+      "value": "/api/projects/{id}",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 64
+    },
+    {
+      "method": "PUT",
+      "value": "/api/tasks/{id}",
+      "file": "sample-app/frontend/src/api.ts",
+      "line": 69
+    }
+  ],
+  "controls": [
+    {
+      "tag": "a",
+      "value": "<a class=\"brand\" href=\"/projects\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 14
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/projects\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 14
+    },
+    {
+      "tag": "button",
+      "value": "<button class=\"link-button\" data-action=\"logout\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 14
+    },
+    {
+      "tag": "button",
+      "value": "<button data-action=\"retry\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 39
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"#${escapeHtml(field)}\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 48
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"#{escapeHtml(field)}\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 48
+    },
+    {
+      "tag": "input",
+      "value": "<input id=\"name\" name=\"name\" required minlength=\"2\" maxlength=\"100\" value=\"{escapeHtml(project?.name)}\" aria-describedby=\"name-help\" />",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 53
+    },
+    {
+      "tag": "textarea",
+      "value": "<textarea id=\"description\" name=\"description\" maxlength=\"1000\" rows=\"6\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 53
+    },
+    {
+      "tag": "button",
+      "value": "<button type=\"submit\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 53
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"{editing ? `/projects/${project?.id}` : '/projects'}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 53
+    },
+    {
+      "tag": "input",
+      "value": "<input id=\"title\" name=\"title\" required minlength=\"2\" maxlength=\"120\" value=\"{escapeHtml(task?.title)}\" />",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 64
+    },
+    {
+      "tag": "textarea",
+      "value": "<textarea id=\"description\" name=\"description\" maxlength=\"2000\" rows=\"6\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 64
+    },
+    {
+      "tag": "input",
+      "value": "<input type=\"hidden\" name=\"status\" value=\"{task?.status ?? 'TODO'}\" />",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 64
+    },
+    {
+      "tag": "input",
+      "value": "<input type=\"hidden\" name=\"assigneeId\" value=\"{task?.assigneeId ?? ''}\" />",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 64
+    },
+    {
+      "tag": "button",
+      "value": "<button type=\"submit\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 64
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"{editing ? `/tasks/${task?.id}` : `/projects/${projectId}`}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 64
+    },
+    {
+      "tag": "a",
+      "value": "<a class=\"button\" href=\"/projects/new\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 78
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/projects/${p.id}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 78
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/projects/{p.id}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 78
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/tasks/${task.id}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 87
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/tasks/{task.id}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 87
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/projects\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 88
+    },
+    {
+      "tag": "a",
+      "value": "<a class=\"button secondary\" href=\"/projects/{id}/edit\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 88
+    },
+    {
+      "tag": "button",
+      "value": "<button class=\"danger\" data-action=\"delete-project\" data-id=\"{id}\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 88
+    },
+    {
+      "tag": "a",
+      "value": "<a class=\"button\" href=\"/projects/{id}/tasks/new\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 88
+    },
+    {
+      "tag": "a",
+      "value": "<a href=\"/projects/{task.projectId}\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 99
+    },
+    {
+      "tag": "a",
+      "value": "<a class=\"button secondary\" href=\"/tasks/{id}/edit\" data-link>",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 99
+    },
+    {
+      "tag": "button",
+      "value": "<button class=\"danger\" data-action=\"delete-task\" data-id=\"{id}\" data-project-id=\"{task.projectId}\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 99
+    },
+    {
+      "tag": "select",
+      "value": "<select id=\"task-status\" data-action=\"task-status\" data-id=\"{id}\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 99
+    },
+    {
+      "tag": "input",
+      "value": "<input id=\"username\" name=\"username\" autocomplete=\"username\" value=\"admin\" required />",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 105
+    },
+    {
+      "tag": "input",
+      "value": "<input id=\"password\" name=\"password\" type=\"password\" autocomplete=\"current-password\" required />",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 105
+    },
+    {
+      "tag": "button",
+      "value": "<button type=\"submit\">",
+      "file": "sample-app/frontend/src/main.ts",
+      "line": 105
+    }
+  ],
+  "proposedFlows": [
+    {
+      "id": "flow:candidate:-login",
+      "route": "/login",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:19"
+      ]
+    },
+    {
+      "id": "flow:candidate:-projects",
+      "route": "/projects",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:18"
+      ]
+    },
+    {
+      "id": "flow:candidate:-projects-id",
+      "route": "/projects/:id",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:13"
+      ]
+    },
+    {
+      "id": "flow:candidate:-projects-id-edit",
+      "route": "/projects/:id/edit",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:13"
+      ]
+    },
+    {
+      "id": "flow:candidate:-projects-id-tasks-new",
+      "route": "/projects/:id/tasks/new",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:14"
+      ]
+    },
+    {
+      "id": "flow:candidate:-projects-new",
+      "route": "/projects/new",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:20"
+      ]
+    },
+    {
+      "id": "flow:candidate:-tasks-id",
+      "route": "/tasks/:id",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:14"
+      ]
+    },
+    {
+      "id": "flow:candidate:-tasks-id-edit",
+      "route": "/tasks/:id/edit",
+      "confidence": "INFERRED",
+      "evidence": [
+        "sample-app/frontend/src/router.ts:14"
+      ]
+    }
+  ]
+}

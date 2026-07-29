@@ -1,0 +1,3571 @@
+[ {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-login-failure-0-938bbd878b.html",
+  "description" : "Observed UI action transition from /login (normal) to /login (normal)",
+  "title" : "パスワード",
+  "id" : "action:login-failure:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-login-failure-1-b87038b40b.html",
+  "description" : "Observed UI action transition from /login (normal) to /login (validation-error)",
+  "title" : "ログイン",
+  "id" : "action:login-failure:1"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-login-success-0-8141fd9185.html",
+  "description" : "Observed UI action transition from /login (normal) to /login (normal)",
+  "title" : "パスワード",
+  "id" : "action:login-success:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-login-success-1-6f9cd7302f.html",
+  "description" : "Observed UI action transition from /login (normal) to /projects (normal)",
+  "title" : "ログイン",
+  "id" : "action:login-success:1"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-create-success-0-9d3989ddc4.html",
+  "description" : "Observed UI action transition from /projects/new (normal) to /projects/new (normal)",
+  "title" : "プロジェクト名",
+  "id" : "action:project-create-success:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-create-success-1-5d6b31a80f.html",
+  "description" : "Observed UI action transition from /projects/new (normal) to /projects/new (normal)",
+  "title" : "説明",
+  "id" : "action:project-create-success:1"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-create-success-2-0334575864.html",
+  "description" : "Observed UI action transition from /projects/new (normal) to /projects/{id} (success)",
+  "title" : "プロジェクトを作成",
+  "id" : "action:project-create-success:2"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-create-validation-0-b4ad93fbdf.html",
+  "description" : "Observed UI action transition from /projects/new (normal) to /projects/new (normal)",
+  "title" : "プロジェクト名",
+  "id" : "action:project-create-validation:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-create-validation-1-79ddda2615.html",
+  "description" : "Observed UI action transition from /projects/new (normal) to /projects/new (validation-error)",
+  "title" : "プロジェクトを作成",
+  "id" : "action:project-create-validation:1"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-delete-0-dea59a5205.html",
+  "description" : "Observed UI action transition from /projects/{id} (normal) to /projects (success)",
+  "title" : "削除",
+  "id" : "action:project-delete:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-update-0-a37b1366b6.html",
+  "description" : "Observed UI action transition from /projects/{id}/edit (normal) to /projects/{id}/edit (normal)",
+  "title" : "プロジェクト名",
+  "id" : "action:project-update:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-project-update-1-5924f13ee3.html",
+  "description" : "Observed UI action transition from /projects/{id}/edit (normal) to /projects/{id} (success)",
+  "title" : "変更を保存",
+  "id" : "action:project-update:1"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-create-0-9001d16917.html",
+  "description" : "Observed UI action transition from /projects/{id}/tasks/new (normal) to /projects/{id}/tasks/new (normal)",
+  "title" : "タスク名",
+  "id" : "action:task-create:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-create-1-291b3a9493.html",
+  "description" : "Observed UI action transition from /projects/{id}/tasks/new (normal) to /projects/{id}/tasks/new (normal)",
+  "title" : "説明",
+  "id" : "action:task-create:1"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-create-2-cb2803e802.html",
+  "description" : "Observed UI action transition from /projects/{id}/tasks/new (normal) to /tasks/{id} (success)",
+  "title" : "タスクを作成",
+  "id" : "action:task-create:2"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-delete-0-e86a52ceb3.html",
+  "description" : "Observed UI action transition from /tasks/{id} (normal) to /projects/{id} (success)",
+  "title" : "削除",
+  "id" : "action:task-delete:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-status-change-0-5e64d5bc8b.html",
+  "description" : "Observed UI action transition from /tasks/{id} (normal) to /tasks/{id} (success)",
+  "title" : "状態を変更",
+  "id" : "action:task-status-change:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-update-0-5d2f64de9e.html",
+  "description" : "Observed UI action transition from /tasks/{id}/edit (normal) to /tasks/{id}/edit (normal)",
+  "title" : "タスク名",
+  "id" : "action:task-update:0"
+}, {
+  "type" : "UI_ACTION",
+  "url" : "screens/action-task-update-1-ed0d9fb6cf.html",
+  "description" : "Observed UI action transition from /tasks/{id}/edit (normal) to /tasks/{id} (success)",
+  "title" : "変更を保存",
+  "id" : "action:task-update:1"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-delete-api-projects-id-56fcefbe54.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "DELETE /api/projects/{id}",
+  "id" : "client:DELETE:/api/projects/{id}"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-delete-api-tasks-id-540eaf8c4a.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "DELETE /api/tasks/{id}",
+  "id" : "client:DELETE:/api/tasks/{id}"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-get-api-projects-18100e7d5f.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "GET /api/projects",
+  "id" : "client:GET:/api/projects"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-get-api-projects-id-cb3db063d8.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "GET /api/projects/{id}",
+  "id" : "client:GET:/api/projects/{id}"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-get-api-projects-id-tasks-345a6c86b5.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "GET /api/projects/{id}/tasks",
+  "id" : "client:GET:/api/projects/{id}/tasks"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-get-api-tasks-id-3fc6a7e0e0.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "GET /api/tasks/{id}",
+  "id" : "client:GET:/api/tasks/{id}"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-patch-api-tasks-id-status-af25e13bca.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "PATCH /api/tasks/{id}/status",
+  "id" : "client:PATCH:/api/tasks/{id}/status"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-post-api-auth-login-62fefe2791.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "POST /api/auth/login",
+  "id" : "client:POST:/api/auth/login"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-post-api-projects-28e9af1a6e.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "POST /api/projects",
+  "id" : "client:POST:/api/projects"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-post-api-projects-id-tasks-ade951baf6.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "POST /api/projects/{id}/tasks",
+  "id" : "client:POST:/api/projects/{id}/tasks"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-put-api-projects-id-c771fc0c0e.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "PUT /api/projects/{id}",
+  "id" : "client:PUT:/api/projects/{id}"
+}, {
+  "type" : "HTTP_CLIENT_CALL",
+  "url" : "endpoints/client-put-api-tasks-id-3eef2a3c30.html",
+  "description" : "Client API discovered from Playwright network observation",
+  "title" : "PUT /api/tasks/{id}",
+  "id" : "client:PUT:/api/tasks/{id}"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-action-24738a1dc2.html",
+  "description" : "",
+  "title" : "public.audit_logs.action",
+  "id" : "column:public.audit_logs.action"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-created-at-345820cc1a.html",
+  "description" : "",
+  "title" : "public.audit_logs.created_at",
+  "id" : "column:public.audit_logs.created_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-details-bf6f5935a8.html",
+  "description" : "",
+  "title" : "public.audit_logs.details",
+  "id" : "column:public.audit_logs.details"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-entity-id-d502cd6cda.html",
+  "description" : "",
+  "title" : "public.audit_logs.entity_id",
+  "id" : "column:public.audit_logs.entity_id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-entity-type-3a0f043a95.html",
+  "description" : "",
+  "title" : "public.audit_logs.entity_type",
+  "id" : "column:public.audit_logs.entity_type"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-id-8d03c950b2.html",
+  "description" : "",
+  "title" : "public.audit_logs.id",
+  "id" : "column:public.audit_logs.id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-audit-logs-user-id-5e4b6e750f.html",
+  "description" : "",
+  "title" : "public.audit_logs.user_id",
+  "id" : "column:public.audit_logs.user_id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-projects-created-at-96583cdf24.html",
+  "description" : "",
+  "title" : "public.projects.created_at",
+  "id" : "column:public.projects.created_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-projects-description-b34d716b6d.html",
+  "description" : "",
+  "title" : "public.projects.description",
+  "id" : "column:public.projects.description"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-projects-id-a7ea8cc28c.html",
+  "description" : "",
+  "title" : "public.projects.id",
+  "id" : "column:public.projects.id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-projects-name-89682a607c.html",
+  "description" : "",
+  "title" : "public.projects.name",
+  "id" : "column:public.projects.name"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-projects-owner-id-0dae8ef11e.html",
+  "description" : "",
+  "title" : "public.projects.owner_id",
+  "id" : "column:public.projects.owner_id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-projects-updated-at-5d10cfca61.html",
+  "description" : "",
+  "title" : "public.projects.updated_at",
+  "id" : "column:public.projects.updated_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-assignee-id-9b82ef93de.html",
+  "description" : "",
+  "title" : "public.tasks.assignee_id",
+  "id" : "column:public.tasks.assignee_id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-created-at-3117667219.html",
+  "description" : "",
+  "title" : "public.tasks.created_at",
+  "id" : "column:public.tasks.created_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-description-00c72d85ac.html",
+  "description" : "",
+  "title" : "public.tasks.description",
+  "id" : "column:public.tasks.description"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-due-date-5bcaaeab0b.html",
+  "description" : "",
+  "title" : "public.tasks.due_date",
+  "id" : "column:public.tasks.due_date"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-id-20170c49e5.html",
+  "description" : "",
+  "title" : "public.tasks.id",
+  "id" : "column:public.tasks.id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-project-id-e78aa8ec2d.html",
+  "description" : "",
+  "title" : "public.tasks.project_id",
+  "id" : "column:public.tasks.project_id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-status-7556586519.html",
+  "description" : "",
+  "title" : "public.tasks.status",
+  "id" : "column:public.tasks.status"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-title-f144bad8d6.html",
+  "description" : "",
+  "title" : "public.tasks.title",
+  "id" : "column:public.tasks.title"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-tasks-updated-at-39f90ea69b.html",
+  "description" : "",
+  "title" : "public.tasks.updated_at",
+  "id" : "column:public.tasks.updated_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-created-at-642644d74b.html",
+  "description" : "",
+  "title" : "public.users.created_at",
+  "id" : "column:public.users.created_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-enabled-36f62b74f5.html",
+  "description" : "",
+  "title" : "public.users.enabled",
+  "id" : "column:public.users.enabled"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-id-4b23450fa5.html",
+  "description" : "",
+  "title" : "public.users.id",
+  "id" : "column:public.users.id"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-password-hash-f16afc619a.html",
+  "description" : "BCrypt password hash; plaintext passwords are never persisted",
+  "title" : "public.users.password_hash",
+  "id" : "column:public.users.password_hash"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-role-0ebfeca196.html",
+  "description" : "",
+  "title" : "public.users.role",
+  "id" : "column:public.users.role"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-updated-at-8e1f7b34be.html",
+  "description" : "",
+  "title" : "public.users.updated_at",
+  "id" : "column:public.users.updated_at"
+}, {
+  "type" : "DB_COLUMN",
+  "url" : "tables/column-public-users-username-8ef8e380fa.html",
+  "description" : "",
+  "title" : "public.users.username",
+  "id" : "column:public.users.username"
+}, {
+  "type" : "CUSTOM_HTML_SECTION",
+  "url" : "custom/custom-html-entries-project-create-success-6be35357d0.html",
+  "description" : "Human-maintained custom HTML section",
+  "title" : "Custom · project-create-success",
+  "id" : "custom-html:entries/project-create-success"
+}, {
+  "type" : "DOMA_DAO",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-auditlogdao-9872f25620.html",
+  "description" : "",
+  "title" : "AuditLogDao",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.AuditLogDao"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-auditlogdao-insert-audi-167790ae24.html",
+  "description" : "",
+  "title" : "AuditLogDao#insert",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.AuditLogDao#insert(AuditLogEntity)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-auditlogdao-selectrecen-00c68fe68e.html",
+  "description" : "",
+  "title" : "AuditLogDao#selectRecent",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.AuditLogDao#selectRecent(int)"
+}, {
+  "type" : "DOMA_DAO",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-1143a4c9b0.html",
+  "description" : "",
+  "title" : "ProjectDao",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-delete-proje-8af2566cf4.html",
+  "description" : "",
+  "title" : "ProjectDao#delete",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao#delete(ProjectEntity)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-insert-proje-e6d4848fe8.html",
+  "description" : "",
+  "title" : "ProjectDao#insert",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao#insert(ProjectEntity)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-selectaccess-42372617b4.html",
+  "description" : "",
+  "title" : "ProjectDao#selectAccessible",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao#selectAccessible(Long,boolean)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-selectbyid-l-b26ed9aec2.html",
+  "description" : "",
+  "title" : "ProjectDao#selectById",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao#selectById(Long)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-selectcurren-6f5a6d5a43.html",
+  "description" : "",
+  "title" : "ProjectDao#selectCurrentIdentity",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao#selectCurrentIdentity()"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-projectdao-update-proje-20e2cbc694.html",
+  "description" : "",
+  "title" : "ProjectDao#update",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.ProjectDao#update(ProjectEntity)"
+}, {
+  "type" : "DOMA_DAO",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-f079b0ec45.html",
+  "description" : "",
+  "title" : "TaskDao",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-delete-taskenti-c61416f26f.html",
+  "description" : "",
+  "title" : "TaskDao#delete",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao#delete(TaskEntity)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-insert-taskenti-b62b8472c1.html",
+  "description" : "",
+  "title" : "TaskDao#insert",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao#insert(TaskEntity)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-selectbyid-long-cd007a79d3.html",
+  "description" : "",
+  "title" : "TaskDao#selectById",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao#selectById(Long)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-selectbyproject-409c564de6.html",
+  "description" : "",
+  "title" : "TaskDao#selectByProjectId",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao#selectByProjectId(Long)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-selectcurrentid-171798f7bb.html",
+  "description" : "",
+  "title" : "TaskDao#selectCurrentIdentity",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao#selectCurrentIdentity()"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-taskdao-update-taskenti-9848d49c0b.html",
+  "description" : "",
+  "title" : "TaskDao#update",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.TaskDao#update(TaskEntity)"
+}, {
+  "type" : "DOMA_DAO",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-userdao-818468d428.html",
+  "description" : "",
+  "title" : "UserDao",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.UserDao"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-userdao-selectbyid-long-f14556587d.html",
+  "description" : "",
+  "title" : "UserDao#selectById",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.UserDao#selectById(Long)"
+}, {
+  "type" : "DOMA_DAO_METHOD",
+  "url" : "daos/dao-io-github-mandala-sbdp-sample-database-dao-userdao-selectbyusernam-86048c3364.html",
+  "description" : "",
+  "title" : "UserDao#selectByUsername",
+  "id" : "dao:io.github.mandala.sbdp.sample.database.dao.UserDao#selectByUsername(String)"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-any-error-f2438ab4e9.html",
+  "description" : "",
+  "title" : "ANY /error",
+  "id" : "endpoint:ANY:/error"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-delete-api-projects-id-ce5382bf19.html",
+  "description" : "",
+  "title" : "DELETE /api/projects/{id}",
+  "id" : "endpoint:DELETE:/api/projects/{id}"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-delete-api-tasks-id-814db53364.html",
+  "description" : "",
+  "title" : "DELETE /api/tasks/{id}",
+  "id" : "endpoint:DELETE:/api/tasks/{id}"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-actuator-c5f0118f31.html",
+  "description" : "Actuator root web endpoint",
+  "title" : "GET /actuator",
+  "id" : "endpoint:GET:/actuator"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-actuator-health-82d9450a8c.html",
+  "description" : "Actuator web endpoint 'health'",
+  "title" : "GET /actuator/health",
+  "id" : "endpoint:GET:/actuator/health"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-actuator-health-2e390678a6.html",
+  "description" : "",
+  "title" : "GET /actuator/health/**",
+  "id" : "endpoint:GET:/actuator/health/**"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-actuator-info-0c21e2c8f1.html",
+  "description" : "Actuator web endpoint 'info'",
+  "title" : "GET /actuator/info",
+  "id" : "endpoint:GET:/actuator/info"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-actuator-mappings-fae7eb64e0.html",
+  "description" : "Actuator web endpoint 'mappings'",
+  "title" : "GET /actuator/mappings",
+  "id" : "endpoint:GET:/actuator/mappings"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-api-audit-logs-b9c21202be.html",
+  "description" : "",
+  "title" : "GET /api/audit-logs",
+  "id" : "endpoint:GET:/api/audit-logs"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-api-auth-me-409204cc19.html",
+  "description" : "",
+  "title" : "GET /api/auth/me",
+  "id" : "endpoint:GET:/api/auth/me"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-api-projects-07af739870.html",
+  "description" : "",
+  "title" : "GET /api/projects",
+  "id" : "endpoint:GET:/api/projects"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-api-projects-id-4f201b2d78.html",
+  "description" : "",
+  "title" : "GET /api/projects/{id}",
+  "id" : "endpoint:GET:/api/projects/{id}"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-api-projects-projectid-tasks-666cebc9ee.html",
+  "description" : "",
+  "title" : "GET /api/projects/{projectId}/tasks",
+  "id" : "endpoint:GET:/api/projects/{projectId}/tasks"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-api-tasks-id-3270660250.html",
+  "description" : "",
+  "title" : "GET /api/tasks/{id}",
+  "id" : "endpoint:GET:/api/tasks/{id}"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-swagger-ui-html-4a80c45692.html",
+  "description" : "",
+  "title" : "GET /swagger-ui.html",
+  "id" : "endpoint:GET:/swagger-ui.html"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-v3-api-docs-5a82afe639.html",
+  "description" : "",
+  "title" : "GET /v3/api-docs",
+  "id" : "endpoint:GET:/v3/api-docs"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-v3-api-docs-yaml-3e10ea6413.html",
+  "description" : "",
+  "title" : "GET /v3/api-docs.yaml",
+  "id" : "endpoint:GET:/v3/api-docs.yaml"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-get-v3-api-docs-swagger-config-9119cc5eed.html",
+  "description" : "",
+  "title" : "GET /v3/api-docs/swagger-config",
+  "id" : "endpoint:GET:/v3/api-docs/swagger-config"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-patch-api-tasks-id-status-57bfe9ee2f.html",
+  "description" : "",
+  "title" : "PATCH /api/tasks/{id}/status",
+  "id" : "endpoint:PATCH:/api/tasks/{id}/status"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-post-api-auth-login-29db8567b7.html",
+  "description" : "",
+  "title" : "POST /api/auth/login",
+  "id" : "endpoint:POST:/api/auth/login"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-post-api-auth-logout-da5cccf5c8.html",
+  "description" : "",
+  "title" : "POST /api/auth/logout",
+  "id" : "endpoint:POST:/api/auth/logout"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-post-api-projects-fa44b1575d.html",
+  "description" : "Accepts a validated project request and returns the newly created project resource.",
+  "title" : "POST /api/projects",
+  "id" : "endpoint:POST:/api/projects"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-post-api-projects-projectid-tasks-a954c621df.html",
+  "description" : "",
+  "title" : "POST /api/projects/{projectId}/tasks",
+  "id" : "endpoint:POST:/api/projects/{projectId}/tasks"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-put-api-projects-id-95ead440d5.html",
+  "description" : "",
+  "title" : "PUT /api/projects/{id}",
+  "id" : "endpoint:PUT:/api/projects/{id}"
+}, {
+  "type" : "HTTP_ENDPOINT",
+  "url" : "endpoints/endpoint-put-api-tasks-id-6db25ccc31.html",
+  "description" : "",
+  "title" : "PUT /api/tasks/{id}",
+  "id" : "endpoint:PUT:/api/tasks/{id}"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-api-error-d721716387.html",
+  "description" : "Observed E2E flow from /projects to /projects in api-error state",
+  "title" : "APIエラー",
+  "id" : "flow:api.error"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-forbidden-8ff81aac16.html",
+  "description" : "Observed E2E flow from /projects/{id} to /projects/{id} in forbidden state",
+  "title" : "権限不足",
+  "id" : "flow:forbidden"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-login-failure-eb28567fc6.html",
+  "description" : "Observed E2E flow from /login to /login in validation-error state",
+  "title" : "ログイン失敗",
+  "id" : "flow:login.failure"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-login-success-19bcbc5299.html",
+  "description" : "Observed E2E flow from /login to /projects in normal state",
+  "title" : "ログイン成功",
+  "id" : "flow:login.success"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-not-found-ceb7835ceb.html",
+  "description" : "Observed E2E flow from /does-not-exist to /does-not-exist in not-found state",
+  "title" : "Not Found",
+  "id" : "flow:not.found"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-project-create-success-eee4aee6f3.html",
+  "description" : "Observed E2E flow from /projects/new to /projects/{id} in success state",
+  "title" : "プロジェクト作成成功",
+  "id" : "flow:project.create.success"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-project-create-validation-1c5745bba7.html",
+  "description" : "Observed E2E flow from /projects/new to /projects/new in validation-error state",
+  "title" : "プロジェクト作成入力エラー",
+  "id" : "flow:project.create.validation"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-project-delete-19b68de981.html",
+  "description" : "Observed E2E flow from /projects/{id} to /projects in success state",
+  "title" : "プロジェクト削除",
+  "id" : "flow:project.delete"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-project-detail-87a1ee2d15.html",
+  "description" : "Observed E2E flow from /projects/{id} to /projects/{id} in normal state",
+  "title" : "プロジェクト詳細",
+  "id" : "flow:project.detail"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-project-update-d977cd9216.html",
+  "description" : "Observed E2E flow from /projects/{id}/edit to /projects/{id} in success state",
+  "title" : "プロジェクト更新",
+  "id" : "flow:project.update"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-projects-empty-d5606ff94e.html",
+  "description" : "Observed E2E flow from /projects to /projects in empty state",
+  "title" : "プロジェクト一覧0件",
+  "id" : "flow:projects.empty"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-projects-list-bb51fec045.html",
+  "description" : "Observed E2E flow from /projects to /projects in normal state",
+  "title" : "プロジェクト一覧",
+  "id" : "flow:projects.list"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-projects-loading-453cc15f77.html",
+  "description" : "Observed E2E flow from /projects to /projects in loading state",
+  "title" : "プロジェクト一覧Loading",
+  "id" : "flow:projects.loading"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-task-create-8b488fbdf7.html",
+  "description" : "Observed E2E flow from /projects/{id}/tasks/new to /tasks/{id} in success state",
+  "title" : "タスク作成",
+  "id" : "flow:task.create"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-task-delete-1b610e7def.html",
+  "description" : "Observed E2E flow from /tasks/{id} to /projects/{id} in success state",
+  "title" : "タスク削除",
+  "id" : "flow:task.delete"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-task-status-change-6daee5754e.html",
+  "description" : "Observed E2E flow from /tasks/{id} to /tasks/{id} in success state",
+  "title" : "タスク状態変更",
+  "id" : "flow:task.status.change"
+}, {
+  "type" : "E2E_FLOW",
+  "url" : "e2e/flow-task-update-b013172119.html",
+  "description" : "Observed E2E flow from /tasks/{id}/edit to /tasks/{id} in success state",
+  "title" : "タスク更新",
+  "id" : "flow:task.update"
+}, {
+  "type" : "CONTROLLER",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-auditlogcontroller-0ccc19bdd4.html",
+  "description" : "",
+  "title" : "AuditLogController",
+  "id" : "java:io.github.mandala.sbdp.sample.api.AuditLogController"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-auditlogcontroller-recent-int-84bef55efd.html",
+  "description" : "",
+  "title" : "AuditLogController#recent",
+  "id" : "java:io.github.mandala.sbdp.sample.api.AuditLogController#recent(int)"
+}, {
+  "type" : "CONTROLLER",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-authcontroller-2043f49cc4.html",
+  "description" : "",
+  "title" : "AuthController",
+  "id" : "java:io.github.mandala.sbdp.sample.api.AuthController"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-authcontroller-login-loginreque-f99dc5ef6a.html",
+  "description" : "",
+  "title" : "AuthController#login",
+  "id" : "java:io.github.mandala.sbdp.sample.api.AuthController#login(LoginRequest,HttpServletRequest,HttpServletResponse)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-authcontroller-logout-appuserpr-0a0de49a18.html",
+  "description" : "",
+  "title" : "AuthController#logout",
+  "id" : "java:io.github.mandala.sbdp.sample.api.AuthController#logout(AppUserPrincipal,HttpServletRequest,HttpServletResponse)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-authcontroller-me-appuserprinci-0a39cd90cb.html",
+  "description" : "",
+  "title" : "AuthController#me",
+  "id" : "java:io.github.mandala.sbdp.sample.api.AuthController#me(AppUserPrincipal)"
+}, {
+  "type" : "CONTROLLER",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-projectcontroller-0a0c6d437c.html",
+  "description" : "",
+  "title" : "ProjectController",
+  "id" : "java:io.github.mandala.sbdp.sample.api.ProjectController"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-projectcontroller-create-projec-8a0373ffb8.html",
+  "description" : "Accepts a validated project request and returns the newly created project resource.",
+  "title" : "ProjectController#create",
+  "id" : "java:io.github.mandala.sbdp.sample.api.ProjectController#create(ProjectRequest,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-projectcontroller-delete-long-a-0c78a929f5.html",
+  "description" : "",
+  "title" : "ProjectController#delete",
+  "id" : "java:io.github.mandala.sbdp.sample.api.ProjectController#delete(Long,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-projectcontroller-get-long-appu-c12a445bcc.html",
+  "description" : "",
+  "title" : "ProjectController#get",
+  "id" : "java:io.github.mandala.sbdp.sample.api.ProjectController#get(Long,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-projectcontroller-list-appuserp-564308402f.html",
+  "description" : "",
+  "title" : "ProjectController#list",
+  "id" : "java:io.github.mandala.sbdp.sample.api.ProjectController#list(AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-projectcontroller-update-long-p-0fd811df88.html",
+  "description" : "",
+  "title" : "ProjectController#update",
+  "id" : "java:io.github.mandala.sbdp.sample.api.ProjectController#update(Long,ProjectRequest,AppUserPrincipal)"
+}, {
+  "type" : "CONTROLLER",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-df7f747624.html",
+  "description" : "",
+  "title" : "TaskController",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-changestatus-lon-2f31e67bd9.html",
+  "description" : "",
+  "title" : "TaskController#changeStatus",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController#changeStatus(Long,ChangeStatusRequest,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-create-long-crea-488ec3923e.html",
+  "description" : "",
+  "title" : "TaskController#create",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController#create(Long,CreateTaskRequest,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-delete-long-appu-3cd4d9bf3f.html",
+  "description" : "",
+  "title" : "TaskController#delete",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController#delete(Long,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-get-long-appuser-23164df837.html",
+  "description" : "",
+  "title" : "TaskController#get",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController#get(Long,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-list-long-appuse-cd15c284dd.html",
+  "description" : "",
+  "title" : "TaskController#list",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController#list(Long,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-api-taskcontroller-update-long-upda-38131b89dd.html",
+  "description" : "",
+  "title" : "TaskController#update",
+  "id" : "java:io.github.mandala.sbdp.sample.api.TaskController#update(Long,UpdateTaskRequest,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-security-databaseuserdetailsservice-633ca7fc89.html",
+  "description" : "",
+  "title" : "DatabaseUserDetailsService",
+  "id" : "java:io.github.mandala.sbdp.sample.security.DatabaseUserDetailsService"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-security-databaseuserdetailsservice-8527f5fd61.html",
+  "description" : "",
+  "title" : "DatabaseUserDetailsService#loadUserByUsername",
+  "id" : "java:io.github.mandala.sbdp.sample.security.DatabaseUserDetailsService#loadUserByUsername(String)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-security-restaccessdeniedhandler-7310109178.html",
+  "description" : "",
+  "title" : "RestAccessDeniedHandler",
+  "id" : "java:io.github.mandala.sbdp.sample.security.RestAccessDeniedHandler"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-security-restaccessdeniedhandler-ha-f550421b41.html",
+  "description" : "",
+  "title" : "RestAccessDeniedHandler#handle",
+  "id" : "java:io.github.mandala.sbdp.sample.security.RestAccessDeniedHandler#handle(HttpServletRequest,HttpServletResponse,AccessDeniedException)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-security-restauthenticationentrypoi-6f8b2c76c8.html",
+  "description" : "",
+  "title" : "RestAuthenticationEntryPoint",
+  "id" : "java:io.github.mandala.sbdp.sample.security.RestAuthenticationEntryPoint"
+}, {
+  "type" : "JAVA_METHOD",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-security-restauthenticationentrypoi-cbd136714c.html",
+  "description" : "",
+  "title" : "RestAuthenticationEntryPoint#commence",
+  "id" : "java:io.github.mandala.sbdp.sample.security.RestAuthenticationEntryPoint#commence(HttpServletRequest,HttpServletResponse,AuthenticationException)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-auditlogservice-5800fc17da.html",
+  "description" : "",
+  "title" : "AuditLogService",
+  "id" : "java:io.github.mandala.sbdp.sample.service.AuditLogService"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-auditlogservice-recent-int-9cb91888c5.html",
+  "description" : "",
+  "title" : "AuditLogService#recent",
+  "id" : "java:io.github.mandala.sbdp.sample.service.AuditLogService#recent(int)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-auditlogservice-record-long-a4b7df1e3d.html",
+  "description" : "",
+  "title" : "AuditLogService#record",
+  "id" : "java:io.github.mandala.sbdp.sample.service.AuditLogService#record(Long,String,String,Long,Map<String,?>)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectaccesspolicy-5a9aeb0876.html",
+  "description" : "",
+  "title" : "ProjectAccessPolicy",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectAccessPolicy"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectaccesspolicy-require-fe2cae6668.html",
+  "description" : "",
+  "title" : "ProjectAccessPolicy#requireAccessible",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectAccessPolicy#requireAccessible(Long,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectservice-d057e0e4e9.html",
+  "description" : "",
+  "title" : "ProjectService",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectService"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectservice-create-strin-ecf1b418f6.html",
+  "description" : "Creates an owned project and records the creation in the audit log atomically.",
+  "title" : "ProjectService#create",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectService#create(String,String,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectservice-delete-long-7af8193da9.html",
+  "description" : "",
+  "title" : "ProjectService#delete",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectService#delete(Long,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectservice-get-long-app-6a6a304a1b.html",
+  "description" : "",
+  "title" : "ProjectService#get",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectService#get(Long,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectservice-list-appuser-16e801d8d9.html",
+  "description" : "",
+  "title" : "ProjectService#list",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectService#list(AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-projectservice-update-long-4f0de4d648.html",
+  "description" : "",
+  "title" : "ProjectService#update",
+  "id" : "java:io.github.mandala.sbdp.sample.service.ProjectService#update(Long,String,String,AppUserPrincipal)"
+}, {
+  "type" : "JAVA_CLASS",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-d32b96a548.html",
+  "description" : "",
+  "title" : "TaskService",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-changestatus-lo-9d7c744b31.html",
+  "description" : "",
+  "title" : "TaskService#changeStatus",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService#changeStatus(Long,TaskStatus,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-create-long-str-262004ab02.html",
+  "description" : "",
+  "title" : "TaskService#create",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService#create(Long,String,String,Long,LocalDate,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-delete-long-app-2268015310.html",
+  "description" : "",
+  "title" : "TaskService#delete",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService#delete(Long,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-get-long-appuse-b249d471f0.html",
+  "description" : "",
+  "title" : "TaskService#get",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService#get(Long,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-list-long-appus-562c818b4b.html",
+  "description" : "",
+  "title" : "TaskService#list",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService#list(Long,AppUserPrincipal)"
+}, {
+  "type" : "APPLICATION_SERVICE",
+  "url" : "symbols/java-io-github-mandala-sbdp-sample-service-taskservice-update-long-str-df06b82653.html",
+  "description" : "",
+  "title" : "TaskService#update",
+  "id" : "java:io.github.mandala.sbdp.sample.service.TaskService#update(Long,String,String,TaskStatus,Long,LocalDate,AppUserPrincipal)"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-changestatus-c7b7e56793.html",
+  "description" : "",
+  "title" : "changeStatus",
+  "id" : "openapi:changeStatus"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-create-fce9af3cb9.html",
+  "description" : "",
+  "title" : "create",
+  "id" : "openapi:create"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-create-1-77b5207f18.html",
+  "description" : "",
+  "title" : "create_1",
+  "id" : "openapi:create_1"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-delete-d7ac3cc4d0.html",
+  "description" : "",
+  "title" : "delete",
+  "id" : "openapi:delete"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-delete-1-446b8f6cbb.html",
+  "description" : "",
+  "title" : "delete_1",
+  "id" : "openapi:delete_1"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-get-f358952db3.html",
+  "description" : "",
+  "title" : "get",
+  "id" : "openapi:get"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-get-1-2e4b57efda.html",
+  "description" : "",
+  "title" : "get_1",
+  "id" : "openapi:get_1"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-health-7f3d18e18e.html",
+  "description" : "Actuator web endpoint 'health'",
+  "title" : "health",
+  "id" : "openapi:health"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-info-dd118cb452.html",
+  "description" : "Actuator web endpoint 'info'",
+  "title" : "info",
+  "id" : "openapi:info"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-links-fde094e6d2.html",
+  "description" : "Actuator root web endpoint",
+  "title" : "links",
+  "id" : "openapi:links"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-list-2da10cbb9a.html",
+  "description" : "",
+  "title" : "list",
+  "id" : "openapi:list"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-list-1-83a7e68e10.html",
+  "description" : "",
+  "title" : "list_1",
+  "id" : "openapi:list_1"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-login-45b0514109.html",
+  "description" : "",
+  "title" : "login",
+  "id" : "openapi:login"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-logout-c4a914fb62.html",
+  "description" : "",
+  "title" : "logout",
+  "id" : "openapi:logout"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-mappings-78414e0ea1.html",
+  "description" : "Actuator web endpoint 'mappings'",
+  "title" : "mappings",
+  "id" : "openapi:mappings"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-me-17d7361b48.html",
+  "description" : "",
+  "title" : "me",
+  "id" : "openapi:me"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-recent-c8ec2f542b.html",
+  "description" : "",
+  "title" : "recent",
+  "id" : "openapi:recent"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-update-3c8089a94b.html",
+  "description" : "",
+  "title" : "update",
+  "id" : "openapi:update"
+}, {
+  "type" : "OPENAPI_OPERATION",
+  "url" : "endpoints/openapi-update-1-d109704d87.html",
+  "description" : "",
+  "title" : "update_1",
+  "id" : "openapi:update_1"
+}, {
+  "type" : "REQUEST_SCHEMA",
+  "url" : "endpoints/request-endpoint-patch-api-tasks-id-status-6570a5247b.html",
+  "description" : "",
+  "title" : "ChangeStatusRequest",
+  "id" : "request:endpoint:PATCH:/api/tasks/{id}/status"
+}, {
+  "type" : "REQUEST_SCHEMA",
+  "url" : "endpoints/request-endpoint-post-api-auth-login-4fa25513ce.html",
+  "description" : "",
+  "title" : "LoginRequest",
+  "id" : "request:endpoint:POST:/api/auth/login"
+}, {
+  "type" : "REQUEST_SCHEMA",
+  "url" : "endpoints/request-endpoint-post-api-projects-8fda2933da.html",
+  "description" : "",
+  "title" : "ProjectRequest",
+  "id" : "request:endpoint:POST:/api/projects"
+}, {
+  "type" : "REQUEST_SCHEMA",
+  "url" : "endpoints/request-endpoint-post-api-projects-projectid-tasks-76047759ea.html",
+  "description" : "",
+  "title" : "CreateTaskRequest",
+  "id" : "request:endpoint:POST:/api/projects/{projectId}/tasks"
+}, {
+  "type" : "REQUEST_SCHEMA",
+  "url" : "endpoints/request-endpoint-put-api-projects-id-c17555a701.html",
+  "description" : "",
+  "title" : "ProjectRequest",
+  "id" : "request:endpoint:PUT:/api/projects/{id}"
+}, {
+  "type" : "REQUEST_SCHEMA",
+  "url" : "endpoints/request-endpoint-put-api-tasks-id-d228aab11c.html",
+  "description" : "",
+  "title" : "UpdateTaskRequest",
+  "id" : "request:endpoint:PUT:/api/tasks/{id}"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-any-error-400-958aa0aa42.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:ANY:/error:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-any-error-401-60074ce932.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:ANY:/error:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-any-error-403-00089f94a2.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:ANY:/error:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-any-error-404-9e506e546b.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:ANY:/error:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-any-error-409-0aabe23533.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:ANY:/error:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-any-error-500-7beb641032.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:ANY:/error:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-204-1be100f2f7.html",
+  "description" : "",
+  "title" : "ResponseEntity<Void> (204)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:204"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-400-e436d40d4f.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-401-ec73633af5.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-403-4ad5311fba.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-404-351d923163.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-409-057e698759.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-projects-id-500-282409c13d.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:DELETE:/api/projects/{id}:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-204-83d486f642.html",
+  "description" : "",
+  "title" : "ResponseEntity<Void> (204)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:204"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-400-8285290fd0.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-401-3264f03ffa.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-403-080bfe1029.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-404-fc536eeec3.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-409-dc8ca815c9.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-delete-api-tasks-id-500-b2838ce2b6.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:DELETE:/api/tasks/{id}:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-400-cc450351c8.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/actuator/health/**:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-401-5abb291844.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/actuator/health/**:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-403-2e00184391.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/actuator/health/**:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-404-b71c35bc6c.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/actuator/health/**:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-409-c89692968b.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/actuator/health/**:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-500-4513fcb63a.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/actuator/health/**:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-200-f25e7a232a.html",
+  "description" : "OK",
+  "title" : "object (200)",
+  "id" : "response:endpoint:GET:/actuator/health:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-400-a6cdeb7079.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/actuator/health:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-401-c8ab158177.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/actuator/health:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-403-0380ae754d.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/actuator/health:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-404-21fb426e58.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/actuator/health:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-409-524d8ced92.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/actuator/health:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-health-500-1007b32c48.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/actuator/health:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-200-ada081ac56.html",
+  "description" : "OK",
+  "title" : "object (200)",
+  "id" : "response:endpoint:GET:/actuator/info:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-400-9ef444bf56.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/actuator/info:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-401-bfbf30742f.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/actuator/info:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-403-ad28498e99.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/actuator/info:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-404-135e4e336c.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/actuator/info:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-409-612d19c8c4.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/actuator/info:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-info-500-d6ffe79894.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/actuator/info:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-200-e67783178f.html",
+  "description" : "OK",
+  "title" : "object (200)",
+  "id" : "response:endpoint:GET:/actuator/mappings:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-400-4df55518f3.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/actuator/mappings:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-401-78baf4302c.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/actuator/mappings:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-403-71d9cacfc9.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/actuator/mappings:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-404-df8e038b9a.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/actuator/mappings:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-409-8d12887387.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/actuator/mappings:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-mappings-500-5439776ce5.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/actuator/mappings:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-200-1fc4ea518e.html",
+  "description" : "OK",
+  "title" : "object (200)",
+  "id" : "response:endpoint:GET:/actuator:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-400-17b801af2c.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/actuator:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-401-b46230dd7f.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/actuator:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-403-dda62823fd.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/actuator:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-404-18210a89a3.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/actuator:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-409-7829adb494.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/actuator:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-actuator-500-a8c4dd3d4e.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/actuator:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-200-d265ec7e03.html",
+  "description" : "",
+  "title" : "List<AuditLogResponse> (200)",
+  "id" : "response:endpoint:GET:/api/audit-logs:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-400-a199cfc94f.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/api/audit-logs:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-401-15c722e40d.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/api/audit-logs:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-403-a558a3d35c.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/api/audit-logs:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-404-3350d75af6.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/api/audit-logs:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-409-b1f6ed2720.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/api/audit-logs:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-audit-logs-500-5e36320108.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/api/audit-logs:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-200-8e7a8bbd87.html",
+  "description" : "",
+  "title" : "AuthenticatedUser (200)",
+  "id" : "response:endpoint:GET:/api/auth/me:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-400-bd19de9259.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/api/auth/me:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-401-6e02f41f88.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/api/auth/me:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-403-a6ba08340b.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/api/auth/me:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-404-d5a93fc8ed.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/api/auth/me:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-409-7e3045ec84.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/api/auth/me:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-auth-me-500-4a366e681f.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/api/auth/me:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-200-683fe382a9.html",
+  "description" : "",
+  "title" : "ProjectResponse (200)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-400-828f2a4cad.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-401-8e5bec5e8b.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-403-6e3820d1d3.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-404-3544a79f9b.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-409-a45c3d5251.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-id-500-488a2aa0b6.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/api/projects/{id}:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-200-34703d24db.html",
+  "description" : "",
+  "title" : "List<TaskResponse> (200)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-400-c654f8fede.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-401-66e2a819f1.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-403-37337b71d0.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-404-08906d51aa.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-409-aac21ab1e1.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-projectid-tasks-500-6747384a49.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/api/projects/{projectId}/tasks:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-200-e5c87053b6.html",
+  "description" : "",
+  "title" : "List<ProjectResponse> (200)",
+  "id" : "response:endpoint:GET:/api/projects:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-400-35a4014d26.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/api/projects:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-401-b137280c9d.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/api/projects:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-403-9f036f4fce.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/api/projects:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-404-420ed5aaf9.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/api/projects:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-409-fe7c9ddab7.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/api/projects:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-projects-500-00144f44ed.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/api/projects:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-200-2613a4c1fb.html",
+  "description" : "",
+  "title" : "TaskResponse (200)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-400-3f3597b43d.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-401-3ddd752fd1.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-403-977d67da41.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-404-ae17c9976f.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-409-d6aaf7b981.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-api-tasks-id-500-b78d664c14.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/api/tasks/{id}:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-swagger-ui-html-400-1096e156f0.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/swagger-ui.html:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-swagger-ui-html-401-0aefbfd7f4.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/swagger-ui.html:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-swagger-ui-html-403-9363fcaeb6.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/swagger-ui.html:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-swagger-ui-html-404-00340c462a.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/swagger-ui.html:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-swagger-ui-html-409-4351a43ea5.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/swagger-ui.html:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-swagger-ui-html-500-f561eae321.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/swagger-ui.html:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-yaml-400-75d0ff7b56.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/v3/api-docs.yaml:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-yaml-401-9afb28379f.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/v3/api-docs.yaml:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-yaml-403-de68809f3e.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/v3/api-docs.yaml:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-yaml-404-c7f72e14f8.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/v3/api-docs.yaml:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-yaml-409-efae446e5a.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/v3/api-docs.yaml:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-yaml-500-e8cc60c55d.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/v3/api-docs.yaml:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-swagger-config-400-a0c15735ed.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/v3/api-docs/swagger-config:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-swagger-config-401-10225e97f1.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/v3/api-docs/swagger-config:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-swagger-config-403-5eca1cc067.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/v3/api-docs/swagger-config:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-swagger-config-404-45b307b78a.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/v3/api-docs/swagger-config:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-swagger-config-409-16a9c188a3.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/v3/api-docs/swagger-config:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-swagger-config-500-188bc6ef86.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/v3/api-docs/swagger-config:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-400-d5f82ac590.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:GET:/v3/api-docs:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-401-c1919078d3.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:GET:/v3/api-docs:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-403-5c74b82a26.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:GET:/v3/api-docs:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-404-48c6a8e492.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:GET:/v3/api-docs:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-409-94aa818b44.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:GET:/v3/api-docs:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-get-v3-api-docs-500-cd0bdaa9cd.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:GET:/v3/api-docs:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-200-84b3cc51df.html",
+  "description" : "",
+  "title" : "TaskResponse (200)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-400-1eef634efe.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-401-9ebe850e49.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-403-f21cc8f74d.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-404-d9db8b060d.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-409-090946130e.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-patch-api-tasks-id-status-500-3b9ab4d4aa.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:PATCH:/api/tasks/{id}/status:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-200-2ad19d8e5f.html",
+  "description" : "",
+  "title" : "AuthenticatedUser (200)",
+  "id" : "response:endpoint:POST:/api/auth/login:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-400-a988d45610.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:POST:/api/auth/login:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-401-d8f79c35ba.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:POST:/api/auth/login:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-403-7ac3d8ce43.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:POST:/api/auth/login:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-404-6c45cda300.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:POST:/api/auth/login:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-409-883c427d51.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:POST:/api/auth/login:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-login-500-8252cbe6be.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:POST:/api/auth/login:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-204-7fad0b1f41.html",
+  "description" : "",
+  "title" : "void (204)",
+  "id" : "response:endpoint:POST:/api/auth/logout:204"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-400-1b304d4411.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:POST:/api/auth/logout:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-401-cd90e659f9.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:POST:/api/auth/logout:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-403-3b9c4e6127.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:POST:/api/auth/logout:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-404-c81d83c500.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:POST:/api/auth/logout:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-409-1b631f4ba8.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:POST:/api/auth/logout:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-auth-logout-500-d77d366669.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:POST:/api/auth/logout:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-200-e5089e48a5.html",
+  "description" : "OK",
+  "title" : "TaskResponse (200)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-201-4d413f6b2b.html",
+  "description" : "",
+  "title" : "ResponseEntity<TaskResponse> (201)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:201"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-400-f4e3270ab1.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-401-81e5339ed2.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-403-46092ffb23.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-404-534064ffe7.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-409-ad28039ee4.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-projectid-tasks-500-70029b75ac.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:POST:/api/projects/{projectId}/tasks:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-200-fd830238c6.html",
+  "description" : "OK",
+  "title" : "ProjectResponse (200)",
+  "id" : "response:endpoint:POST:/api/projects:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-201-e55f22dae0.html",
+  "description" : "",
+  "title" : "ResponseEntity<ProjectResponse> (201)",
+  "id" : "response:endpoint:POST:/api/projects:201"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-400-115fa5d152.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:POST:/api/projects:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-401-93d931df44.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:POST:/api/projects:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-403-4f053fd9d2.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:POST:/api/projects:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-404-b73735d621.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:POST:/api/projects:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-409-864dbc48ba.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:POST:/api/projects:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-post-api-projects-500-1cabd88792.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:POST:/api/projects:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-200-150554fcb1.html",
+  "description" : "",
+  "title" : "ProjectResponse (200)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-400-d603d7780f.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-401-980a0e316d.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-403-85037a5fcb.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-404-8a6c93f63a.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-409-02d3d9d5e6.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-projects-id-500-5ae86aec56.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:PUT:/api/projects/{id}:500"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-200-3371b8e34c.html",
+  "description" : "",
+  "title" : "TaskResponse (200)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:200"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-400-5dd42d9382.html",
+  "description" : "Handles ConstraintViolationException as HTTP BAD_REQUEST. Handles HttpMessageNotReadableException as HTTP BAD_REQUEST. Handles MethodArgumentNotValidException as HTTP BAD_REQUEST. Handles MethodArgumentTypeMismatchException as HTTP BAD_REQUEST.",
+  "title" : "ApiErrorResponse (400)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:400"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-401-051ae9efee.html",
+  "description" : "Handles AuthenticationException as HTTP UNAUTHORIZED.",
+  "title" : "ApiErrorResponse (401)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:401"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-403-f77e945cc8.html",
+  "description" : "Handles ForbiddenOperationException as HTTP FORBIDDEN.",
+  "title" : "ApiErrorResponse (403)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:403"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-404-9e67f3b347.html",
+  "description" : "Handles NoResourceFoundException as HTTP NOT_FOUND. Handles ResourceNotFoundException as HTTP NOT_FOUND.",
+  "title" : "ApiErrorResponse (404)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:404"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-409-92d7741030.html",
+  "description" : "Handles DataIntegrityViolationException as HTTP CONFLICT.",
+  "title" : "ApiErrorResponse (409)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:409"
+}, {
+  "type" : "RESPONSE_SCHEMA",
+  "url" : "endpoints/response-endpoint-put-api-tasks-id-500-b4b44b5a3a.html",
+  "description" : "Handles Exception as HTTP INTERNAL_SERVER_ERROR.",
+  "title" : "ApiErrorResponse (500)",
+  "id" : "response:endpoint:PUT:/api/tasks/{id}:500"
+}, {
+  "type" : "DB_SCHEMA",
+  "url" : "tables/schema-public-3ec1754d69.html",
+  "description" : "standard public schema",
+  "title" : "public",
+  "id" : "schema:public"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-does-not-exist-not-found-not-found-ff210372c6.html",
+  "description" : "",
+  "title" : "Not Found · not-found",
+  "id" : "screen-state:/does-not-exist:not-found.not-found"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-login-normal-login-failure-70cecf3eb7.html",
+  "description" : "Observed normal screen state at /login",
+  "title" : "ログイン失敗 · normal",
+  "id" : "screen-state:/login:normal.login-failure"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-login-normal-login-success-3ac25addad.html",
+  "description" : "Observed normal screen state at /login",
+  "title" : "ログイン成功 · normal",
+  "id" : "screen-state:/login:normal.login-success"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-login-validation-error-login-failure-c7c16c90a4.html",
+  "description" : "",
+  "title" : "ログイン失敗 · validation-error",
+  "id" : "screen-state:/login:validation-error.login-failure"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-new-normal-project-create-success-54159f2a0a.html",
+  "description" : "Observed normal screen state at /projects/new",
+  "title" : "プロジェクト作成成功 · normal",
+  "id" : "screen-state:/projects/new:normal.project-create-success"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-new-normal-project-create-validation-493db60ea3.html",
+  "description" : "Observed normal screen state at /projects/new",
+  "title" : "プロジェクト作成入力エラー · normal",
+  "id" : "screen-state:/projects/new:normal.project-create-validation"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-new-validation-error-project-create-validation-5558eb4193.html",
+  "description" : "",
+  "title" : "プロジェクト作成入力エラー · validation-error",
+  "id" : "screen-state:/projects/new:validation-error.project-create-validation"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-edit-normal-project-update-1cc6b5ab97.html",
+  "description" : "Observed normal screen state at /projects/{id}/edit",
+  "title" : "プロジェクト更新 · normal",
+  "id" : "screen-state:/projects/{id}/edit:normal.project-update"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-tasks-new-normal-task-create-49eb9cfb0a.html",
+  "description" : "Observed normal screen state at /projects/{id}/tasks/new",
+  "title" : "タスク作成 · normal",
+  "id" : "screen-state:/projects/{id}/tasks/new:normal.task-create"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-forbidden-forbidden-ba4e31bf62.html",
+  "description" : "",
+  "title" : "権限不足 · forbidden",
+  "id" : "screen-state:/projects/{id}:forbidden.forbidden"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-normal-project-delete-a3f7b8d1b7.html",
+  "description" : "Observed normal screen state at /projects/{id}",
+  "title" : "プロジェクト削除 · normal",
+  "id" : "screen-state:/projects/{id}:normal.project-delete"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-normal-project-detail-8ee2bb3e30.html",
+  "description" : "",
+  "title" : "プロジェクト詳細 · normal",
+  "id" : "screen-state:/projects/{id}:normal.project-detail"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-success-project-create-success-71e7650953.html",
+  "description" : "",
+  "title" : "プロジェクト作成成功 · success",
+  "id" : "screen-state:/projects/{id}:success.project-create-success"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-success-project-update-b187ec794e.html",
+  "description" : "",
+  "title" : "プロジェクト更新 · success",
+  "id" : "screen-state:/projects/{id}:success.project-update"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-id-success-task-delete-3f573b58c7.html",
+  "description" : "",
+  "title" : "タスク削除 · success",
+  "id" : "screen-state:/projects/{id}:success.task-delete"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-api-error-api-error-835f9f18c2.html",
+  "description" : "",
+  "title" : "APIエラー · api-error",
+  "id" : "screen-state:/projects:api-error.api-error"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-empty-projects-empty-c27fc17b86.html",
+  "description" : "",
+  "title" : "プロジェクト一覧0件 · empty",
+  "id" : "screen-state:/projects:empty.projects-empty"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-loading-projects-loading-aec7d822ba.html",
+  "description" : "",
+  "title" : "プロジェクト一覧Loading · loading",
+  "id" : "screen-state:/projects:loading.projects-loading"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-normal-login-success-5c88db46db.html",
+  "description" : "",
+  "title" : "ログイン成功 · normal",
+  "id" : "screen-state:/projects:normal.login-success"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-normal-projects-list-1e46954810.html",
+  "description" : "",
+  "title" : "プロジェクト一覧 · normal",
+  "id" : "screen-state:/projects:normal.projects-list"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-projects-success-project-delete-c4c1621a61.html",
+  "description" : "",
+  "title" : "プロジェクト削除 · success",
+  "id" : "screen-state:/projects:success.project-delete"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-tasks-id-edit-normal-task-update-903d191aac.html",
+  "description" : "Observed normal screen state at /tasks/{id}/edit",
+  "title" : "タスク更新 · normal",
+  "id" : "screen-state:/tasks/{id}/edit:normal.task-update"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-tasks-id-normal-task-delete-e9270840ec.html",
+  "description" : "Observed normal screen state at /tasks/{id}",
+  "title" : "タスク削除 · normal",
+  "id" : "screen-state:/tasks/{id}:normal.task-delete"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-tasks-id-normal-task-status-change-dda368bd42.html",
+  "description" : "Observed normal screen state at /tasks/{id}",
+  "title" : "タスク状態変更 · normal",
+  "id" : "screen-state:/tasks/{id}:normal.task-status-change"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-tasks-id-success-task-create-5b6a2f8d61.html",
+  "description" : "",
+  "title" : "タスク作成 · success",
+  "id" : "screen-state:/tasks/{id}:success.task-create"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-tasks-id-success-task-status-change-4c04ef38a5.html",
+  "description" : "",
+  "title" : "タスク状態変更 · success",
+  "id" : "screen-state:/tasks/{id}:success.task-status-change"
+}, {
+  "type" : "SCREEN_STATE",
+  "url" : "screens/screen-state-tasks-id-success-task-update-65f80f5b15.html",
+  "description" : "",
+  "title" : "タスク更新 · success",
+  "id" : "screen-state:/tasks/{id}:success.task-update"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-does-not-exist-56cbd2920a.html",
+  "description" : "Frontend route /does-not-exist",
+  "title" : "/does-not-exist",
+  "id" : "screen:/does-not-exist"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-login-dc6b4f4744.html",
+  "description" : "Frontend route /login",
+  "title" : "/login",
+  "id" : "screen:/login"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-projects-85925a80de.html",
+  "description" : "Frontend route /projects",
+  "title" : "/projects",
+  "id" : "screen:/projects"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-projects-new-bdd31d5c36.html",
+  "description" : "Frontend route /projects/new",
+  "title" : "/projects/new",
+  "id" : "screen:/projects/new"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-projects-id-7558d2ed7f.html",
+  "description" : "Frontend route /projects/{id}",
+  "title" : "/projects/{id}",
+  "id" : "screen:/projects/{id}"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-projects-id-edit-c1953efb0f.html",
+  "description" : "Frontend route /projects/{id}/edit",
+  "title" : "/projects/{id}/edit",
+  "id" : "screen:/projects/{id}/edit"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-projects-id-tasks-new-46a7512661.html",
+  "description" : "Frontend route /projects/{id}/tasks/new",
+  "title" : "/projects/{id}/tasks/new",
+  "id" : "screen:/projects/{id}/tasks/new"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-tasks-id-ee13bb8803.html",
+  "description" : "Observed frontend route /tasks/{id}",
+  "title" : "/tasks/{id}",
+  "id" : "screen:/tasks/{id}"
+}, {
+  "type" : "SCREEN",
+  "url" : "screens/screen-tasks-id-edit-2f778e37ae.html",
+  "description" : "Frontend route /tasks/{id}/edit",
+  "title" : "/tasks/{id}/edit",
+  "id" : "screen:/tasks/{id}/edit"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-api-error-a206f31142.html",
+  "description" : "",
+  "title" : "APIエラー screenshot",
+  "id" : "screenshot:api-error"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-forbidden-b0049ee9a4.html",
+  "description" : "",
+  "title" : "権限不足 screenshot",
+  "id" : "screenshot:forbidden"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-login-failure-bd0761c899.html",
+  "description" : "",
+  "title" : "ログイン失敗 screenshot",
+  "id" : "screenshot:login-failure"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-login-failure-step-0-574bfa815e.html",
+  "description" : "",
+  "title" : "おかえりなさい screenshot",
+  "id" : "screenshot:login-failure:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-login-failure-step-1-5c63bb05a2.html",
+  "description" : "",
+  "title" : "おかえりなさい screenshot",
+  "id" : "screenshot:login-failure:step:1"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-login-success-7801700375.html",
+  "description" : "",
+  "title" : "ログイン成功 screenshot",
+  "id" : "screenshot:login-success"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-login-success-step-0-3ac6a12b34.html",
+  "description" : "",
+  "title" : "おかえりなさい screenshot",
+  "id" : "screenshot:login-success:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-login-success-step-1-52ec9b2fdd.html",
+  "description" : "",
+  "title" : "おかえりなさい screenshot",
+  "id" : "screenshot:login-success:step:1"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-not-found-75c3421d03.html",
+  "description" : "",
+  "title" : "Not Found screenshot",
+  "id" : "screenshot:not-found"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-success-85454208f8.html",
+  "description" : "",
+  "title" : "プロジェクト作成成功 screenshot",
+  "id" : "screenshot:project-create-success"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-success-step-0-d8b231eb29.html",
+  "description" : "",
+  "title" : "新しいプロジェクト screenshot",
+  "id" : "screenshot:project-create-success:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-success-step-1-b1a2cd2622.html",
+  "description" : "",
+  "title" : "新しいプロジェクト screenshot",
+  "id" : "screenshot:project-create-success:step:1"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-success-step-2-41cd085398.html",
+  "description" : "",
+  "title" : "新しいプロジェクト screenshot",
+  "id" : "screenshot:project-create-success:step:2"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-validation-29fc159c4d.html",
+  "description" : "",
+  "title" : "プロジェクト作成入力エラー screenshot",
+  "id" : "screenshot:project-create-validation"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-validation-step-0-486e1dc759.html",
+  "description" : "",
+  "title" : "新しいプロジェクト screenshot",
+  "id" : "screenshot:project-create-validation:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-create-validation-step-1-bc74480c85.html",
+  "description" : "",
+  "title" : "新しいプロジェクト screenshot",
+  "id" : "screenshot:project-create-validation:step:1"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-delete-54ec117eee.html",
+  "description" : "",
+  "title" : "プロジェクト削除 screenshot",
+  "id" : "screenshot:project-delete"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-delete-step-0-211f7a1c59.html",
+  "description" : "",
+  "title" : "Atlas Renewal screenshot",
+  "id" : "screenshot:project-delete:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-detail-28e25adf3b.html",
+  "description" : "",
+  "title" : "プロジェクト詳細 screenshot",
+  "id" : "screenshot:project-detail"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-update-71fac6d221.html",
+  "description" : "",
+  "title" : "プロジェクト更新 screenshot",
+  "id" : "screenshot:project-update"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-update-step-0-2e34faa11a.html",
+  "description" : "",
+  "title" : "プロジェクトを編集 screenshot",
+  "id" : "screenshot:project-update:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-project-update-step-1-07da3fba2d.html",
+  "description" : "",
+  "title" : "プロジェクトを編集 screenshot",
+  "id" : "screenshot:project-update:step:1"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-projects-empty-f178ae799f.html",
+  "description" : "",
+  "title" : "プロジェクト一覧0件 screenshot",
+  "id" : "screenshot:projects-empty"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-projects-list-3c8371ff2b.html",
+  "description" : "",
+  "title" : "プロジェクト一覧 screenshot",
+  "id" : "screenshot:projects-list"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-projects-loading-8a74d9f670.html",
+  "description" : "",
+  "title" : "プロジェクト一覧Loading screenshot",
+  "id" : "screenshot:projects-loading"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-create-873fc4c16b.html",
+  "description" : "",
+  "title" : "タスク作成 screenshot",
+  "id" : "screenshot:task-create"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-create-step-0-fb6e00a533.html",
+  "description" : "",
+  "title" : "新しいタスク screenshot",
+  "id" : "screenshot:task-create:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-create-step-1-a9666fda61.html",
+  "description" : "",
+  "title" : "新しいタスク screenshot",
+  "id" : "screenshot:task-create:step:1"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-create-step-2-97186bf55f.html",
+  "description" : "",
+  "title" : "新しいタスク screenshot",
+  "id" : "screenshot:task-create:step:2"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-delete-60f3faccf6.html",
+  "description" : "",
+  "title" : "タスク削除 screenshot",
+  "id" : "screenshot:task-delete"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-delete-step-0-fad4779262.html",
+  "description" : "",
+  "title" : "API設計 screenshot",
+  "id" : "screenshot:task-delete:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-status-change-79ffe216c5.html",
+  "description" : "",
+  "title" : "タスク状態変更 screenshot",
+  "id" : "screenshot:task-status-change"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-status-change-step-0-0f763d3fe9.html",
+  "description" : "",
+  "title" : "API設計 screenshot",
+  "id" : "screenshot:task-status-change:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-update-72a5803a06.html",
+  "description" : "",
+  "title" : "タスク更新 screenshot",
+  "id" : "screenshot:task-update"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-update-step-0-319265a4a1.html",
+  "description" : "",
+  "title" : "タスクを編集 screenshot",
+  "id" : "screenshot:task-update:step:0"
+}, {
+  "type" : "SCREENSHOT",
+  "url" : "screens/screenshot-task-update-step-1-0de172e2ff.html",
+  "description" : "",
+  "title" : "タスクを編集 screenshot",
+  "id" : "screenshot:task-update:step:1"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-0b9443c2d655dfa0fe73-d4031698c4.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.update",
+  "id" : "span:observed:039a1698266566e55fce:0b9443c2d655dfa0fe73"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-0dd78c6944545e3c0977-57501ae8c8.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:039a1698266566e55fce:0dd78c6944545e3c0977"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-2432199f7bd94d1fed52-62a91a775e.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:039a1698266566e55fce:2432199f7bd94d1fed52"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-26455857522d12786519-97300892b8.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:039a1698266566e55fce:26455857522d12786519"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-2d571585f4df9ea844ec-74034aa967.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.tasks",
+  "id" : "span:observed:039a1698266566e55fce:2d571585f4df9ea844ec"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-5c461d3982c622884eee-c3986d8a12.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service TaskService.update",
+  "id" : "span:observed:039a1698266566e55fce:5c461d3982c622884eee"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-a9ec7d4329208f7935aa-45ad96b2c4.html",
+  "description" : "OTHER runtime span",
+  "title" : "PUT /api/tasks/{id}",
+  "id" : "span:observed:039a1698266566e55fce:a9ec7d4329208f7935aa"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-bd6356c186f22d5ef41b-ba5ed013b0.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.selectById",
+  "id" : "span:observed:039a1698266566e55fce:bd6356c186f22d5ef41b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-c6c234d48851f9fe8326-b2cfcca3d0.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:039a1698266566e55fce:c6c234d48851f9fe8326"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-db365703c78c3fbc2307-fe4a68c58f.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:039a1698266566e55fce:db365703c78c3fbc2307"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-039a1698266566e55fce-f40d344817dc573002f5-dfa957cb81.html",
+  "description" : "JDBC runtime span",
+  "title" : "UPDATE mandala_sample.tasks",
+  "id" : "span:observed:039a1698266566e55fce:f40d344817dc573002f5"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-1a039a42a90e51da2a3f-e12e106559.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:042d6728e50f47cd1adf:1a039a42a90e51da2a3f"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-3ad283601d67eb5d8360-bf7925deb9.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:042d6728e50f47cd1adf:3ad283601d67eb5d8360"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-487cf278b68167eed6e1-796cd036ad.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service ProjectService.create",
+  "id" : "span:observed:042d6728e50f47cd1adf:487cf278b68167eed6e1"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-57f81013dcf12c086711-73db137b81.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.projects",
+  "id" : "span:observed:042d6728e50f47cd1adf:57f81013dcf12c086711"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-792157e1d43fee6cf9ae-0e130a05ff.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:042d6728e50f47cd1adf:792157e1d43fee6cf9ae"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-7b87cea0f0dec3dc529a-692cc6b000.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectCurrentIdentity",
+  "id" : "span:observed:042d6728e50f47cd1adf:7b87cea0f0dec3dc529a"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-82bb66b9db59da6a3395-6bb1426d15.html",
+  "description" : "OTHER runtime span",
+  "title" : "POST /api/projects",
+  "id" : "span:observed:042d6728e50f47cd1adf:82bb66b9db59da6a3395"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-8f3d16dea9f190d25464-b40b7615b4.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.insert",
+  "id" : "span:observed:042d6728e50f47cd1adf:8f3d16dea9f190d25464"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-042d6728e50f47cd1adf-d9bfc6a80c32df4747af-fa305afb6f.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample",
+  "id" : "span:observed:042d6728e50f47cd1adf:d9bfc6a80c32df4747af"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-0580fa54d5f22ff27d87-6dcbadcf745c002b2c7d-f99d093de4.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:0580fa54d5f22ff27d87:6dcbadcf745c002b2c7d"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-0580fa54d5f22ff27d87-70d5fd6aa623433b1b03-3c6e954266.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:0580fa54d5f22ff27d87:70d5fd6aa623433b1b03"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-0580fa54d5f22ff27d87-b6d73fe03d9659699bb0-db717996d5.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:0580fa54d5f22ff27d87:b6d73fe03d9659699bb0"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-0580fa54d5f22ff27d87-ff34478b0353801be090-089c02c4a3.html",
+  "description" : "OTHER runtime span",
+  "title" : "POST /api/auth/logout",
+  "id" : "span:observed:0580fa54d5f22ff27d87:ff34478b0353801be090"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-00515d76fbe54cb91450-94d24a1a73.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:3104cf20878f8ce91744:00515d76fbe54cb91450"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-0979f709dad0d14237b5-2d135d7848.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.selectCurrentIdentity",
+  "id" : "span:observed:3104cf20878f8ce91744:0979f709dad0d14237b5"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-12a865c52dda5873c63f-f5b174a773.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:3104cf20878f8ce91744:12a865c52dda5873c63f"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-2d4c02d1da3404a6c01b-47b0a09592.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample",
+  "id" : "span:observed:3104cf20878f8ce91744:2d4c02d1da3404a6c01b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-4ef9637c4996d1ab1115-86d989fe5b.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.tasks",
+  "id" : "span:observed:3104cf20878f8ce91744:4ef9637c4996d1ab1115"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-80fa68cad3b2e4bac509-ba48814440.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service TaskService.create",
+  "id" : "span:observed:3104cf20878f8ce91744:80fa68cad3b2e4bac509"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-8d8cec6c76d5561ad2ed-18741047fb.html",
+  "description" : "OTHER runtime span",
+  "title" : "POST /api/projects/{projectId}/tasks",
+  "id" : "span:observed:3104cf20878f8ce91744:8d8cec6c76d5561ad2ed"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-e451dcfc74732ecd0cb6-e97a411ee0.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.insert",
+  "id" : "span:observed:3104cf20878f8ce91744:e451dcfc74732ecd0cb6"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-f42c0d4f9b9fbb95a795-cb601de90a.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:3104cf20878f8ce91744:f42c0d4f9b9fbb95a795"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-f50b274a77928462db59-970d7b3ba1.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:3104cf20878f8ce91744:f50b274a77928462db59"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3104cf20878f8ce91744-f98dd37b7c5420899d32-b120aafea5.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:3104cf20878f8ce91744:f98dd37b7c5420899d32"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3402e1e6671938b2d7ff-20ba06841fbc4889e5a0-1831d0904a.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:3402e1e6671938b2d7ff:20ba06841fbc4889e5a0"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3402e1e6671938b2d7ff-3b6bab7fd950ced7e6f7-70273255e5.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:3402e1e6671938b2d7ff:3b6bab7fd950ced7e6f7"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3402e1e6671938b2d7ff-5f014eb64ba4ba02f500-4350b2f219.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service ProjectService.get",
+  "id" : "span:observed:3402e1e6671938b2d7ff:5f014eb64ba4ba02f500"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-3402e1e6671938b2d7ff-fb6621743ec30e6e2bfc-fb9a65ebb4.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /api/projects/{id}",
+  "id" : "span:observed:3402e1e6671938b2d7ff:fb6621743ec30e6e2bfc"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-17ee38fcba9c4e2d9ed2-43ff908775.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:473d2233639b19c119e7:17ee38fcba9c4e2d9ed2"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-2f73240b7f38b91d0b1b-9643abf23a.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.tasks",
+  "id" : "span:observed:473d2233639b19c119e7:2f73240b7f38b91d0b1b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-38ea864ad7ce7e951ba6-ef97b2b6ac.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:473d2233639b19c119e7:38ea864ad7ce7e951ba6"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-41bbb043284892aa9531-37baf69493.html",
+  "description" : "JDBC runtime span",
+  "title" : "UPDATE mandala_sample.tasks",
+  "id" : "span:observed:473d2233639b19c119e7:41bbb043284892aa9531"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-6d5ce6e01c5ebdcf3499-8d550951c8.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.selectById",
+  "id" : "span:observed:473d2233639b19c119e7:6d5ce6e01c5ebdcf3499"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-73947e4ff5abc65fd95b-b09c141914.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:473d2233639b19c119e7:73947e4ff5abc65fd95b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-83c403930732c5563f05-954009d16f.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service TaskService.changeStatus",
+  "id" : "span:observed:473d2233639b19c119e7:83c403930732c5563f05"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-c55475512109d98b342f-a49836fa02.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:473d2233639b19c119e7:c55475512109d98b342f"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-c99dada5977431ac42f6-cc989f9655.html",
+  "description" : "OTHER runtime span",
+  "title" : "PATCH /api/tasks/{id}/status",
+  "id" : "span:observed:473d2233639b19c119e7:c99dada5977431ac42f6"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-d57a11e99d15e7da15a1-574aaf9e67.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:473d2233639b19c119e7:d57a11e99d15e7da15a1"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-473d2233639b19c119e7-f34f5227f55930ee14ff-e57d505f50.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.update",
+  "id" : "span:observed:473d2233639b19c119e7:f34f5227f55930ee14ff"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-1790e2cceed8982e23cd-adbeb26e64.html",
+  "description" : "JDBC runtime span",
+  "title" : "DELETE mandala_sample.tasks",
+  "id" : "span:observed:58efeb186fc18c9a0b01:1790e2cceed8982e23cd"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-1eb098a5e68cf419a63e-3437220b77.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:58efeb186fc18c9a0b01:1eb098a5e68cf419a63e"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-21eba044a0037e027b6b-c7795ee96d.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.tasks",
+  "id" : "span:observed:58efeb186fc18c9a0b01:21eba044a0037e027b6b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-28d8bcc22f2098c2846c-16d669ab50.html",
+  "description" : "OTHER runtime span",
+  "title" : "DELETE /api/tasks/{id}",
+  "id" : "span:observed:58efeb186fc18c9a0b01:28d8bcc22f2098c2846c"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-4c5d57140c6dc7f6a0d1-e46ef4bba1.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.selectById",
+  "id" : "span:observed:58efeb186fc18c9a0b01:4c5d57140c6dc7f6a0d1"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-65d503d52b1fbcf1607c-4a85069a86.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:58efeb186fc18c9a0b01:65d503d52b1fbcf1607c"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-6cab64e5274a13c33adf-7f0f90f685.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:58efeb186fc18c9a0b01:6cab64e5274a13c33adf"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-709fb1956efe73cd8b69-f4eba405e7.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:58efeb186fc18c9a0b01:709fb1956efe73cd8b69"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-a27beaef9e7bb7734a97-bdd5bc9fc9.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:58efeb186fc18c9a0b01:a27beaef9e7bb7734a97"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-a898af32e64d4ad88801-c9a7d4a5a2.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service TaskService.delete",
+  "id" : "span:observed:58efeb186fc18c9a0b01:a898af32e64d4ad88801"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-58efeb186fc18c9a0b01-b69e0abb60aeb2e66f41-3f030e2022.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.delete",
+  "id" : "span:observed:58efeb186fc18c9a0b01:b69e0abb60aeb2e66f41"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-615ed2447c32b6c659bf-04e837bc034f5435f71e-f8ca997a4c.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.users",
+  "id" : "span:observed:615ed2447c32b6c659bf:04e837bc034f5435f71e"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-615ed2447c32b6c659bf-1faaf50ec63756db5dae-f96dc9e494.html",
+  "description" : "OTHER runtime span",
+  "title" : "POST /api/auth/login",
+  "id" : "span:observed:615ed2447c32b6c659bf:1faaf50ec63756db5dae"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-615ed2447c32b6c659bf-7c3e25d169b6c76e23eb-7dbafaadbb.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:615ed2447c32b6c659bf:7c3e25d169b6c76e23eb"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-615ed2447c32b6c659bf-9c23a39dd8b0fadcbc2d-218e49be45.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:615ed2447c32b6c659bf:9c23a39dd8b0fadcbc2d"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-615ed2447c32b6c659bf-d447a4c249bdfbac5228-65fd291f4b.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:615ed2447c32b6c659bf:d447a4c249bdfbac5228"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-615ed2447c32b6c659bf-e272a0bbd0fda5377a05-af0daecbb2.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao UserDao.selectByUsername",
+  "id" : "span:observed:615ed2447c32b6c659bf:e272a0bbd0fda5377a05"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-8070795aad20539bbbfc-eeb3110aa1798b6fc6af-d208b00bc2.html",
+  "description" : "HTTP_SERVER runtime span",
+  "title" : "GET /api/projects",
+  "id" : "span:observed:8070795aad20539bbbfc:eeb3110aa1798b6fc6af"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-965af9c93373ae9aede3-82bb66b9db59da6a3395-82f7ec3022.html",
+  "description" : "OTHER runtime span",
+  "title" : "POST /api/projects",
+  "id" : "span:observed:965af9c93373ae9aede3:82bb66b9db59da6a3395"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b2438be063250cabc35e-20ba06841fbc4889e5a0-0003b05668.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:b2438be063250cabc35e:20ba06841fbc4889e5a0"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b2438be063250cabc35e-3b6bab7fd950ced7e6f7-22e15a98bd.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:b2438be063250cabc35e:3b6bab7fd950ced7e6f7"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b2438be063250cabc35e-5f014eb64ba4ba02f500-57b05d9f77.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service ProjectService.get",
+  "id" : "span:observed:b2438be063250cabc35e:5f014eb64ba4ba02f500"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b2438be063250cabc35e-fb6621743ec30e6e2bfc-eefa67457f.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /api/projects/{id}",
+  "id" : "span:observed:b2438be063250cabc35e:fb6621743ec30e6e2bfc"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-aab3947abfac9c27626b-f2bcaa1f3c.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:b434e039b271d393dfc5:aab3947abfac9c27626b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-cb5c93c7c470d86822a8-20e0fe9a83.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:b434e039b271d393dfc5:cb5c93c7c470d86822a8"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-cba01177bcd112e01dd7-30477939a7.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.update",
+  "id" : "span:observed:b434e039b271d393dfc5:cba01177bcd112e01dd7"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-cca0ef1389dac949d1f4-741327d32d.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:b434e039b271d393dfc5:cca0ef1389dac949d1f4"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-d4eafbb714092e10760f-223c826bc7.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:b434e039b271d393dfc5:d4eafbb714092e10760f"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-d7dc5d08f5a4c2fb8fd8-2ff93a5e12.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service ProjectService.update",
+  "id" : "span:observed:b434e039b271d393dfc5:d7dc5d08f5a4c2fb8fd8"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-e25921cd2d22e1f8d57d-b1c4bbe7c9.html",
+  "description" : "OTHER runtime span",
+  "title" : "PUT /api/projects/{id}",
+  "id" : "span:observed:b434e039b271d393dfc5:e25921cd2d22e1f8d57d"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-f4c4ad558f881f32e182-134d88eda6.html",
+  "description" : "JDBC runtime span",
+  "title" : "UPDATE mandala_sample.projects",
+  "id" : "span:observed:b434e039b271d393dfc5:f4c4ad558f881f32e182"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b434e039b271d393dfc5-fa93e7b95e35366cc785-1a50f46fc5.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:b434e039b271d393dfc5:fa93e7b95e35366cc785"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-b5bdc958e0821c43cef0-e73ac82d2bfde4686d54-a03695527b.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /v3/api-docs",
+  "id" : "span:observed:b5bdc958e0821c43cef0:e73ac82d2bfde4686d54"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-bba56da82c54159a4ac0-939d97acc9741d1fcf08-c1310e14ee.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /actuator/mappings",
+  "id" : "span:observed:bba56da82c54159a4ac0:939d97acc9741d1fcf08"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d36b4cad2fdd9b371fd4-04e837bc034f5435f71e-e24bf3c284.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.users",
+  "id" : "span:observed:d36b4cad2fdd9b371fd4:04e837bc034f5435f71e"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d36b4cad2fdd9b371fd4-1faaf50ec63756db5dae-4529b19921.html",
+  "description" : "OTHER runtime span",
+  "title" : "POST /api/auth/login",
+  "id" : "span:observed:d36b4cad2fdd9b371fd4:1faaf50ec63756db5dae"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d36b4cad2fdd9b371fd4-7c3e25d169b6c76e23eb-c271a9fe78.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:d36b4cad2fdd9b371fd4:7c3e25d169b6c76e23eb"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d36b4cad2fdd9b371fd4-9c23a39dd8b0fadcbc2d-8d0edfeae5.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:d36b4cad2fdd9b371fd4:9c23a39dd8b0fadcbc2d"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d36b4cad2fdd9b371fd4-d447a4c249bdfbac5228-0f123d7196.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:d36b4cad2fdd9b371fd4:d447a4c249bdfbac5228"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d36b4cad2fdd9b371fd4-e272a0bbd0fda5377a05-4fd94ba08e.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao UserDao.selectByUsername",
+  "id" : "span:observed:d36b4cad2fdd9b371fd4:e272a0bbd0fda5377a05"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d38d9cb7ae54a87342b7-0442475113111ec1dc70-966d902c8f.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao TaskDao.selectById",
+  "id" : "span:observed:d38d9cb7ae54a87342b7:0442475113111ec1dc70"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d38d9cb7ae54a87342b7-45eded14f8b76a181835-43065c8890.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service TaskService.get",
+  "id" : "span:observed:d38d9cb7ae54a87342b7:45eded14f8b76a181835"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d38d9cb7ae54a87342b7-4d8858eb484dacd570ef-3325061ee8.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /api/tasks/{id}",
+  "id" : "span:observed:d38d9cb7ae54a87342b7:4d8858eb484dacd570ef"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d38d9cb7ae54a87342b7-6aed3035b3a815fdba8e-7f50b2c6bc.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:d38d9cb7ae54a87342b7:6aed3035b3a815fdba8e"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d38d9cb7ae54a87342b7-d46668dab05bfb0ca41b-0743915d47.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.tasks",
+  "id" : "span:observed:d38d9cb7ae54a87342b7:d46668dab05bfb0ca41b"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d38d9cb7ae54a87342b7-eb59a57a3919f8c53806-3c380eba29.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:d38d9cb7ae54a87342b7:eb59a57a3919f8c53806"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d6d093c31b79eca4a8dc-00803f1ab4da24619960-0de1e047fd.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.audit_logs",
+  "id" : "span:observed:d6d093c31b79eca4a8dc:00803f1ab4da24619960"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d6d093c31b79eca4a8dc-11939a8a09d4fa1d6533-334aa99a46.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.selectRecent",
+  "id" : "span:observed:d6d093c31b79eca4a8dc:11939a8a09d4fa1d6533"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d6d093c31b79eca4a8dc-cc2d15ff1a232eb8812e-111286c30f.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /api/audit-logs",
+  "id" : "span:observed:d6d093c31b79eca4a8dc:cc2d15ff1a232eb8812e"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-d6d093c31b79eca4a8dc-ff3e14c5d86c0b0b7cd0-2ffa21f9c3.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.recent",
+  "id" : "span:observed:d6d093c31b79eca4a8dc:ff3e14c5d86c0b0b7cd0"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-dc4a68db628abd8e7cbd-163b1a8bedab0e229b87-73012a265c.html",
+  "description" : "JDBC runtime span",
+  "title" : "mandala_sample",
+  "id" : "span:observed:dc4a68db628abd8e7cbd:163b1a8bedab0e229b87"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-dc4a68db628abd8e7cbd-648dfcf533968476c61e-ef7cdcf24b.html",
+  "description" : "OTHER runtime span",
+  "title" : "GET /actuator/health",
+  "id" : "span:observed:dc4a68db628abd8e7cbd:648dfcf533968476c61e"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-dc4a68db628abd8e7cbd-962253b1d8617e065fe4-e9e9f13ba5.html",
+  "description" : "JDBC runtime span",
+  "title" : "mandala_sample",
+  "id" : "span:observed:dc4a68db628abd8e7cbd:962253b1d8617e065fe4"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-00bc67fb505998633d20-41c712cd2c.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service ProjectService.delete",
+  "id" : "span:observed:f3422723eb5aa0e97735:00bc67fb505998633d20"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-273031f1397351fb3354-41c3be0462.html",
+  "description" : "JDBC runtime span",
+  "title" : "SELECT mandala_sample.projects",
+  "id" : "span:observed:f3422723eb5aa0e97735:273031f1397351fb3354"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-37322a4012214fc64a88-0a98cc3c8b.html",
+  "description" : "JDBC runtime span",
+  "title" : "DELETE mandala_sample.projects",
+  "id" : "span:observed:f3422723eb5aa0e97735:37322a4012214fc64a88"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-59ec517f5c6cbd76ac53-b5877727b5.html",
+  "description" : "OTHER runtime span",
+  "title" : "DELETE /api/projects/{id}",
+  "id" : "span:observed:f3422723eb5aa0e97735:59ec517f5c6cbd76ac53"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-65581ffc78f416b7da39-7b8738f595.html",
+  "description" : "APPLICATION_SERVICE runtime span",
+  "title" : "mandala.application_service AuditLogService.record",
+  "id" : "span:observed:f3422723eb5aa0e97735:65581ffc78f416b7da39"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-6c5a3cdbd90808ad2f61-cc8d417aa6.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao AuditLogDao.insert",
+  "id" : "span:observed:f3422723eb5aa0e97735:6c5a3cdbd90808ad2f61"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-95a5626871698674a5cc-50bb454b8e.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.delete",
+  "id" : "span:observed:f3422723eb5aa0e97735:95a5626871698674a5cc"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-a838bc9a70bdc63bf1a5-c107296e49.html",
+  "description" : "JDBC runtime span",
+  "title" : "INSERT mandala_sample.audit_logs",
+  "id" : "span:observed:f3422723eb5aa0e97735:a838bc9a70bdc63bf1a5"
+}, {
+  "type" : "SPAN",
+  "url" : "traces/span-observed-f3422723eb5aa0e97735-c31794a044e4284123cc-f61c7b0ce5.html",
+  "description" : "DOMA_DAO runtime span",
+  "title" : "mandala.doma_dao ProjectDao.selectById",
+  "id" : "span:observed:f3422723eb5aa0e97735:c31794a044e4284123cc"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-auditlogdao-in-ba5c2825b4.html",
+  "description" : "INSERT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/AuditLogDao/insert.sql",
+  "title" : "insert.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/AuditLogDao/insert.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-auditlogdao-se-cc13b63c12.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/AuditLogDao/selectRecent.sql",
+  "title" : "selectRecent.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/AuditLogDao/selectRecent.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-projectdao-del-cc450ae538.html",
+  "description" : "DELETE statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/delete.sql",
+  "title" : "delete.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/delete.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-projectdao-ins-2bb0be6d05.html",
+  "description" : "INSERT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/insert.sql",
+  "title" : "insert.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/insert.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-projectdao-sel-4444e5aab7.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/selectAccessible.sql",
+  "title" : "selectAccessible.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/selectAccessible.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-projectdao-sel-27a93d73fa.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/selectById.sql",
+  "title" : "selectById.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/selectById.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-projectdao-sel-6433834230.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/selectCurrentIdentity.sql",
+  "title" : "selectCurrentIdentity.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/selectCurrentIdentity.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-projectdao-upd-b0d198a3d3.html",
+  "description" : "UPDATE statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/update.sql",
+  "title" : "update.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/ProjectDao/update.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-taskdao-delete-9686a32438.html",
+  "description" : "DELETE statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/delete.sql",
+  "title" : "delete.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/delete.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-taskdao-insert-856ef08505.html",
+  "description" : "INSERT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/insert.sql",
+  "title" : "insert.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/insert.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-taskdao-select-29ea2f6374.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/selectById.sql",
+  "title" : "selectById.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/selectById.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-taskdao-select-91748c4760.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/selectByProjectId.sql",
+  "title" : "selectByProjectId.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/selectByProjectId.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-taskdao-select-abb33078ea.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/selectCurrentIdentity.sql",
+  "title" : "selectCurrentIdentity.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/selectCurrentIdentity.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-taskdao-update-80e8ae08b8.html",
+  "description" : "UPDATE statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/update.sql",
+  "title" : "update.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/TaskDao/update.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-userdao-select-acd937983f.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/UserDao/selectById.sql",
+  "title" : "selectById.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/UserDao/selectById.sql"
+}, {
+  "type" : "SQL_STATEMENT",
+  "url" : "sql/sql-meta-inf-io-github-mandala-sbdp-sample-database-dao-userdao-select-90df128164.html",
+  "description" : "SELECT statement from sample-app/backend/src/main/resources/META-INF/io/github/mandala/sbdp/sample/database/dao/UserDao/selectByUsername.sql",
+  "title" : "selectByUsername.sql",
+  "id" : "sql:META-INF/io/github/mandala/sbdp/sample/database/dao/UserDao/selectByUsername.sql"
+}, {
+  "type" : "DB_TABLE",
+  "url" : "tables/table-public-audit-logs-0213954c26.html",
+  "description" : "Immutable application mutation and authentication audit trail",
+  "title" : "public.audit_logs",
+  "id" : "table:public.audit_logs"
+}, {
+  "type" : "DB_TABLE",
+  "url" : "tables/table-public-projects-a89a148d35.html",
+  "description" : "Task-management projects owned by a user",
+  "title" : "public.projects",
+  "id" : "table:public.projects"
+}, {
+  "type" : "DB_TABLE",
+  "url" : "tables/table-public-tasks-219f5b3db0.html",
+  "description" : "Work items belonging to a project",
+  "title" : "public.tasks",
+  "id" : "table:public.tasks"
+}, {
+  "type" : "DB_TABLE",
+  "url" : "tables/table-public-users-016b489852.html",
+  "description" : "Local accounts used for session authentication",
+  "title" : "public.users",
+  "id" : "table:public.users"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-039a1698266566e55fce-6e411b68c6.html",
+  "description" : "Runtime execution path with 11 spans",
+  "title" : "Observed path 039a1698",
+  "id" : "trace:observed:039a1698266566e55fce"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-042d6728e50f47cd1adf-02253d0c1d.html",
+  "description" : "Runtime execution path with 9 spans",
+  "title" : "Observed path 042d6728",
+  "id" : "trace:observed:042d6728e50f47cd1adf"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-0580fa54d5f22ff27d87-44371eea7b.html",
+  "description" : "Runtime execution path with 4 spans",
+  "title" : "Observed path 0580fa54",
+  "id" : "trace:observed:0580fa54d5f22ff27d87"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-3104cf20878f8ce91744-f9548af190.html",
+  "description" : "Runtime execution path with 11 spans",
+  "title" : "Observed path 3104cf20",
+  "id" : "trace:observed:3104cf20878f8ce91744"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-3402e1e6671938b2d7ff-afea1ab34e.html",
+  "description" : "Runtime execution path with 4 spans",
+  "title" : "Observed path 3402e1e6",
+  "id" : "trace:observed:3402e1e6671938b2d7ff"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-473d2233639b19c119e7-558bfd770b.html",
+  "description" : "Runtime execution path with 11 spans",
+  "title" : "Observed path 473d2233",
+  "id" : "trace:observed:473d2233639b19c119e7"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-58efeb186fc18c9a0b01-5994c87ce4.html",
+  "description" : "Runtime execution path with 11 spans",
+  "title" : "Observed path 58efeb18",
+  "id" : "trace:observed:58efeb186fc18c9a0b01"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-615ed2447c32b6c659bf-66855b1116.html",
+  "description" : "Runtime execution path with 6 spans",
+  "title" : "Observed path 615ed244",
+  "id" : "trace:observed:615ed2447c32b6c659bf"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-8070795aad20539bbbfc-feeddee63c.html",
+  "description" : "Runtime execution path with 1 spans",
+  "title" : "Observed path 8070795a",
+  "id" : "trace:observed:8070795aad20539bbbfc"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-965af9c93373ae9aede3-a08a572442.html",
+  "description" : "Runtime execution path with 1 spans",
+  "title" : "Observed path 965af9c9",
+  "id" : "trace:observed:965af9c93373ae9aede3"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-b2438be063250cabc35e-c2f197771c.html",
+  "description" : "Runtime execution path with 4 spans",
+  "title" : "Observed path b2438be0",
+  "id" : "trace:observed:b2438be063250cabc35e"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-b434e039b271d393dfc5-c6a74230d9.html",
+  "description" : "Runtime execution path with 9 spans",
+  "title" : "Observed path b434e039",
+  "id" : "trace:observed:b434e039b271d393dfc5"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-b5bdc958e0821c43cef0-7392ff647c.html",
+  "description" : "Runtime execution path with 1 spans",
+  "title" : "Observed path b5bdc958",
+  "id" : "trace:observed:b5bdc958e0821c43cef0"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-bba56da82c54159a4ac0-f1bbe041e8.html",
+  "description" : "Runtime execution path with 1 spans",
+  "title" : "Observed path bba56da8",
+  "id" : "trace:observed:bba56da82c54159a4ac0"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-d36b4cad2fdd9b371fd4-fe2f5629cc.html",
+  "description" : "Runtime execution path with 6 spans",
+  "title" : "Observed path d36b4cad",
+  "id" : "trace:observed:d36b4cad2fdd9b371fd4"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-d38d9cb7ae54a87342b7-5189780c13.html",
+  "description" : "Runtime execution path with 6 spans",
+  "title" : "Observed path d38d9cb7",
+  "id" : "trace:observed:d38d9cb7ae54a87342b7"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-d6d093c31b79eca4a8dc-0ee43e9735.html",
+  "description" : "Runtime execution path with 4 spans",
+  "title" : "Observed path d6d093c3",
+  "id" : "trace:observed:d6d093c31b79eca4a8dc"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-dc4a68db628abd8e7cbd-fdfc192576.html",
+  "description" : "Runtime execution path with 3 spans",
+  "title" : "Observed path dc4a68db",
+  "id" : "trace:observed:dc4a68db628abd8e7cbd"
+}, {
+  "type" : "TRACE",
+  "url" : "traces/trace-observed-f3422723eb5aa0e97735-64e05629c8.html",
+  "description" : "Runtime execution path with 9 spans",
+  "title" : "Observed path f3422723",
+  "id" : "trace:observed:f3422723eb5aa0e97735"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-does-not-exist-fc80b04f2a.html",
+  "description" : "Direct UI entry point for frontend route /does-not-exist",
+  "title" : "Open /does-not-exist",
+  "id" : "ui-entry:/does-not-exist"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-login-6def8bf4e4.html",
+  "description" : "Direct UI entry point for frontend route /login",
+  "title" : "Open /login",
+  "id" : "ui-entry:/login"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-projects-650d5bf163.html",
+  "description" : "Direct UI entry point for frontend route /projects",
+  "title" : "Open /projects",
+  "id" : "ui-entry:/projects"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-projects-new-dc365718fb.html",
+  "description" : "Direct UI entry point for frontend route /projects/new",
+  "title" : "Open /projects/new",
+  "id" : "ui-entry:/projects/new"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-projects-id-0ad10d85b4.html",
+  "description" : "Direct UI entry point for frontend route /projects/{id}",
+  "title" : "Open /projects/{id}",
+  "id" : "ui-entry:/projects/{id}"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-projects-id-edit-94604b394e.html",
+  "description" : "Direct UI entry point for frontend route /projects/{id}/edit",
+  "title" : "Open /projects/{id}/edit",
+  "id" : "ui-entry:/projects/{id}/edit"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-projects-id-tasks-new-accbe13c87.html",
+  "description" : "Direct UI entry point for frontend route /projects/{id}/tasks/new",
+  "title" : "Open /projects/{id}/tasks/new",
+  "id" : "ui-entry:/projects/{id}/tasks/new"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-tasks-id-6688bb6434.html",
+  "description" : "Direct UI entry point for frontend route /tasks/{id}",
+  "title" : "Open /tasks/{id}",
+  "id" : "ui-entry:/tasks/{id}"
+}, {
+  "type" : "UI_ENTRY",
+  "url" : "screens/ui-entry-tasks-id-edit-b0901bf884.html",
+  "description" : "Direct UI entry point for frontend route /tasks/{id}/edit",
+  "title" : "Open /tasks/{id}/edit",
+  "id" : "ui-entry:/tasks/{id}/edit"
+} ]

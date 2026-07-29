@@ -1,0 +1,64 @@
+mandala:
+  project:
+    id: sample-task-app
+    name: Mandala Sample Task Application
+  source:
+    java:
+      roots:
+        - sample-app/backend/src/main/java
+    resources:
+      roots:
+        - sample-app/backend/src/main/resources
+    frontend:
+      root: sample-app/frontend/src
+  spring:
+    actuatorMappingsUrl: http://localhost:18080/actuator/mappings
+    openApiUrl: http://localhost:18080/v3/api-docs
+    mappingSnapshots:
+      - mandala/snapshots/runtime/actuator-mappings.json
+    openApiSnapshots:
+      - mandala/snapshots/runtime/openapi.json
+  doma:
+    sqlRoots:
+      - sample-app/backend/src/main/resources/META-INF
+  database:
+    type: postgresql
+    connection:
+      url: jdbc:postgresql://localhost:5432/mandala_sample
+      usernameEnv: MANDALA_DB_USERNAME
+      passwordEnv: MANDALA_DB_PASSWORD
+    schemas: [public]
+    excludeTables: [flyway_schema_history]
+    snapshot: mandala/snapshots/db/schema.json
+  telemetry:
+    traces:
+      - mandala/traces/**/*.json
+    captureCommand:
+      - scripts/capture-runtime.sh
+  playwright:
+    baseUrl: http://127.0.0.1:5173
+    scenarios:
+      - sample-app/scenarios/**/*.yaml
+    observations: mandala/snapshots/ui/**/*.json
+    screenshots: mandala/generated/sample-app/screenshots
+    webServer:
+      command: npm run dev --workspace @mandala/sample-frontend
+      url: http://127.0.0.1:5173/
+      reuseExistingServer: true
+      timeoutMs: 120000
+    captureCommand: [npm, run, capture:ui]
+  custom:
+    root: mandala/custom
+    allowJavaScript: false
+  output:
+    graph: mandala/generated/sample-app/graph/mandala.json
+    previousGraph: mandala/cache/previous-graph.json
+    site: mandala/generated/sample-app/site
+    diff: mandala/generated/sample-app/reports/diff.json
+  refresh:
+    mode: incremental
+    fallbackToFull: true
+    baseRef: HEAD~1
+  security:
+    maskKeys: [password, authorization, cookie, token, sessionId, email]
+    excludedPaths: ['**/node_modules/**', '**/build/**', '**/.git/**']
